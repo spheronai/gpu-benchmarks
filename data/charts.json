@@ -1,0 +1,4183 @@
+{
+  "schema": "historical-charts-v1",
+  "charts": [
+    {
+      "asset": "assets/charts/context-001.svg",
+      "group": {
+        "model": "Llama-3.1-8B-Instruct",
+        "config": "Dedicated Endpoint (managed)",
+        "engine": "SGLang",
+        "engine_version": "managed default",
+        "gpu": "H100 SXM",
+        "gpu_count": "1",
+        "area": "dedicated-endpoints",
+        "workload": "same prompt for every request, 220 in / 256 out",
+        "precision": "BF16",
+        "input_tokens": "220",
+        "output_tokens": "256",
+        "date": "2026-11-21"
+      },
+      "points": [
+        {
+          "row_id": 253,
+          "concurrency": "1",
+          "output_tok_s": "158.8"
+        },
+        {
+          "row_id": 254,
+          "concurrency": "8",
+          "output_tok_s": "1227.5"
+        },
+        {
+          "row_id": 255,
+          "concurrency": "16",
+          "output_tok_s": "2354.1"
+        },
+        {
+          "row_id": 256,
+          "concurrency": "32",
+          "output_tok_s": "4546.9"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-002.svg",
+      "group": {
+        "model": "Llama-3.1-8B-Instruct",
+        "config": "Dedicated Endpoint (managed)",
+        "engine": "vLLM",
+        "engine_version": "managed default",
+        "gpu": "H100 SXM",
+        "gpu_count": "1",
+        "area": "dedicated-endpoints",
+        "workload": "same prompt for every request, 220 in / 256 out",
+        "precision": "BF16",
+        "input_tokens": "220",
+        "output_tokens": "256",
+        "date": "2026-11-21"
+      },
+      "points": [
+        {
+          "row_id": 248,
+          "concurrency": "1",
+          "output_tok_s": "159"
+        },
+        {
+          "row_id": 249,
+          "concurrency": "4",
+          "output_tok_s": "626.3"
+        },
+        {
+          "row_id": 250,
+          "concurrency": "8",
+          "output_tok_s": "1226.5"
+        },
+        {
+          "row_id": 251,
+          "concurrency": "16",
+          "output_tok_s": "2390.7"
+        },
+        {
+          "row_id": 252,
+          "concurrency": "32",
+          "output_tok_s": "4535.7"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-003.svg",
+      "group": {
+        "model": "Llama-3.1-8B-Instruct",
+        "config": "Dedicated Endpoint (managed)",
+        "engine": "vLLM",
+        "engine_version": "managed default",
+        "gpu": "RTX 4090",
+        "gpu_count": "1",
+        "area": "dedicated-endpoints",
+        "workload": "same prompt for every request, 220 in / 256 out",
+        "precision": "BF16",
+        "input_tokens": "220",
+        "output_tokens": "256",
+        "date": "2026-11-21"
+      },
+      "points": [
+        {
+          "row_id": 238,
+          "concurrency": "1",
+          "output_tok_s": "53.1"
+        },
+        {
+          "row_id": 239,
+          "concurrency": "4",
+          "output_tok_s": "205.3"
+        },
+        {
+          "row_id": 240,
+          "concurrency": "8",
+          "output_tok_s": "406.8"
+        },
+        {
+          "row_id": 241,
+          "concurrency": "16",
+          "output_tok_s": "792"
+        },
+        {
+          "row_id": 242,
+          "concurrency": "32",
+          "output_tok_s": "1421.7"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-004.svg",
+      "group": {
+        "model": "Llama-3.1-8B-Instruct",
+        "config": "Dedicated Endpoint (managed)",
+        "engine": "vLLM",
+        "engine_version": "managed default",
+        "gpu": "RTX 6000 Ada",
+        "gpu_count": "1",
+        "area": "dedicated-endpoints",
+        "workload": "same prompt for every request, 220 in / 256 out",
+        "precision": "BF16",
+        "input_tokens": "220",
+        "output_tokens": "256",
+        "date": "2026-11-21"
+      },
+      "points": [
+        {
+          "row_id": 257,
+          "concurrency": "1",
+          "output_tok_s": "49.5"
+        },
+        {
+          "row_id": 258,
+          "concurrency": "4",
+          "output_tok_s": "190.7"
+        },
+        {
+          "row_id": 259,
+          "concurrency": "8",
+          "output_tok_s": "376.8"
+        },
+        {
+          "row_id": 260,
+          "concurrency": "16",
+          "output_tok_s": "728.8"
+        },
+        {
+          "row_id": 261,
+          "concurrency": "32",
+          "output_tok_s": "1298.4"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-005.svg",
+      "group": {
+        "model": "Llama-3.1-8B-Instruct",
+        "config": "Dedicated Endpoint (managed)",
+        "engine": "vLLM",
+        "engine_version": "managed default",
+        "gpu": "RTX A6000",
+        "gpu_count": "1",
+        "area": "dedicated-endpoints",
+        "workload": "same prompt for every request, 220 in / 256 out",
+        "precision": "BF16",
+        "input_tokens": "220",
+        "output_tokens": "256",
+        "date": "2026-11-21"
+      },
+      "points": [
+        {
+          "row_id": 233,
+          "concurrency": "1",
+          "output_tok_s": "37.5"
+        },
+        {
+          "row_id": 234,
+          "concurrency": "4",
+          "output_tok_s": "140.9"
+        },
+        {
+          "row_id": 235,
+          "concurrency": "8",
+          "output_tok_s": "277.4"
+        },
+        {
+          "row_id": 236,
+          "concurrency": "16",
+          "output_tok_s": "531.8"
+        },
+        {
+          "row_id": 237,
+          "concurrency": "32",
+          "output_tok_s": "1045.4"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-006.svg",
+      "group": {
+        "model": "Llama-3.1-8B-Instruct",
+        "config": "Dedicated Endpoint (managed)",
+        "engine": "vLLM",
+        "engine_version": "managed default",
+        "gpu": "RTX PRO 6000",
+        "gpu_count": "1",
+        "area": "dedicated-endpoints",
+        "workload": "same prompt for every request, 220 in / 256 out",
+        "precision": "BF16",
+        "input_tokens": "220",
+        "output_tokens": "256",
+        "date": "2026-11-21"
+      },
+      "points": [
+        {
+          "row_id": 243,
+          "concurrency": "1",
+          "output_tok_s": "87.9"
+        },
+        {
+          "row_id": 244,
+          "concurrency": "4",
+          "output_tok_s": "355.8"
+        },
+        {
+          "row_id": 245,
+          "concurrency": "8",
+          "output_tok_s": "701.8"
+        },
+        {
+          "row_id": 246,
+          "concurrency": "16",
+          "output_tok_s": "1348.2"
+        },
+        {
+          "row_id": 247,
+          "concurrency": "32",
+          "output_tok_s": "2490.4"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-007.svg",
+      "group": {
+        "model": "Llama-3.3-70B-Instruct-FP8-dynamic",
+        "config": "Dedicated Endpoint (managed)",
+        "engine": "SGLang",
+        "engine_version": "managed default",
+        "gpu": "H200",
+        "gpu_count": "1",
+        "area": "dedicated-endpoints",
+        "workload": "same prompt for every request, 220 in / 256 out",
+        "precision": "FP8",
+        "input_tokens": "220",
+        "output_tokens": "256",
+        "date": "2026-11-21"
+      },
+      "points": [
+        {
+          "row_id": 298,
+          "concurrency": "1",
+          "output_tok_s": "48.8"
+        },
+        {
+          "row_id": 299,
+          "concurrency": "8",
+          "output_tok_s": "381.1"
+        },
+        {
+          "row_id": 300,
+          "concurrency": "16",
+          "output_tok_s": "739.6"
+        },
+        {
+          "row_id": 301,
+          "concurrency": "32",
+          "output_tok_s": "1411.5"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-008.svg",
+      "group": {
+        "model": "Llama-3.3-70B-Instruct-FP8-dynamic",
+        "config": "Dedicated Endpoint (managed)",
+        "engine": "vLLM",
+        "engine_version": "managed default",
+        "gpu": "B200",
+        "gpu_count": "1",
+        "area": "dedicated-endpoints",
+        "workload": "same prompt for every request, 220 in / 256 out",
+        "precision": "FP8",
+        "input_tokens": "220",
+        "output_tokens": "256",
+        "date": "2026-11-21"
+      },
+      "points": [
+        {
+          "row_id": 293,
+          "concurrency": "1",
+          "output_tok_s": "65.4"
+        },
+        {
+          "row_id": 294,
+          "concurrency": "4",
+          "output_tok_s": "254.4"
+        },
+        {
+          "row_id": 295,
+          "concurrency": "8",
+          "output_tok_s": "519.8"
+        },
+        {
+          "row_id": 296,
+          "concurrency": "16",
+          "output_tok_s": "1051.3"
+        },
+        {
+          "row_id": 297,
+          "concurrency": "32",
+          "output_tok_s": "2004.1"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-009.svg",
+      "group": {
+        "model": "Llama-3.3-70B-Instruct-FP8-dynamic",
+        "config": "Dedicated Endpoint (managed)",
+        "engine": "vLLM",
+        "engine_version": "managed default",
+        "gpu": "H200",
+        "gpu_count": "1",
+        "area": "dedicated-endpoints",
+        "workload": "same prompt for every request, 220 in / 256 out",
+        "precision": "FP8",
+        "input_tokens": "220",
+        "output_tokens": "256",
+        "date": "2026-11-21"
+      },
+      "points": [
+        {
+          "row_id": 288,
+          "concurrency": "1",
+          "output_tok_s": "47.8"
+        },
+        {
+          "row_id": 289,
+          "concurrency": "4",
+          "output_tok_s": "188.9"
+        },
+        {
+          "row_id": 290,
+          "concurrency": "8",
+          "output_tok_s": "371.8"
+        },
+        {
+          "row_id": 291,
+          "concurrency": "16",
+          "output_tok_s": "726.6"
+        },
+        {
+          "row_id": 292,
+          "concurrency": "32",
+          "output_tok_s": "1092.8"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-010.svg",
+      "group": {
+        "model": "Qwen2.5-1.5B-Instruct",
+        "config": "Dedicated Endpoint (managed)",
+        "engine": "SGLang",
+        "engine_version": "managed default",
+        "gpu": "B200",
+        "gpu_count": "1",
+        "area": "dedicated-endpoints",
+        "workload": "same prompt for every request, 220 in / 256 out",
+        "precision": "BF16",
+        "input_tokens": "220",
+        "output_tokens": "256",
+        "date": "2026-11-20"
+      },
+      "points": [
+        {
+          "row_id": 43,
+          "concurrency": "1",
+          "output_tok_s": "505"
+        },
+        {
+          "row_id": 44,
+          "concurrency": "8",
+          "output_tok_s": "3385.9"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-011.svg",
+      "group": {
+        "model": "Qwen2.5-1.5B-Instruct",
+        "config": "Dedicated Endpoint (managed)",
+        "engine": "SGLang",
+        "engine_version": "managed default",
+        "gpu": "H100 SXM",
+        "gpu_count": "1",
+        "area": "dedicated-endpoints",
+        "workload": "same prompt for every request, 220 in / 256 out",
+        "precision": "BF16",
+        "input_tokens": "220",
+        "output_tokens": "256",
+        "date": "2026-11-20"
+      },
+      "points": [
+        {
+          "row_id": 41,
+          "concurrency": "1",
+          "output_tok_s": "358.1"
+        },
+        {
+          "row_id": 42,
+          "concurrency": "8",
+          "output_tok_s": "3319.4"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-012.svg",
+      "group": {
+        "model": "Qwen2.5-1.5B-Instruct",
+        "config": "Dedicated Endpoint (managed)",
+        "engine": "SGLang",
+        "engine_version": "managed default",
+        "gpu": "RTX 4090",
+        "gpu_count": "1",
+        "area": "dedicated-endpoints",
+        "workload": "same prompt for every request, 220 in / 256 out",
+        "precision": "BF16",
+        "input_tokens": "220",
+        "output_tokens": "256",
+        "date": "2026-11-20"
+      },
+      "points": [
+        {
+          "row_id": 1,
+          "concurrency": "1",
+          "output_tok_s": "192"
+        },
+        {
+          "row_id": 2,
+          "concurrency": "8",
+          "output_tok_s": "1308.1"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-013.svg",
+      "group": {
+        "model": "Qwen2.5-1.5B-Instruct",
+        "config": "Dedicated Endpoint (managed)",
+        "engine": "SGLang",
+        "engine_version": "managed default",
+        "gpu": "RTX A6000",
+        "gpu_count": "1",
+        "area": "dedicated-endpoints",
+        "workload": "same prompt for every request, 220 in / 256 out",
+        "precision": "BF16",
+        "input_tokens": "220",
+        "output_tokens": "256",
+        "date": "2026-11-20"
+      },
+      "points": [
+        {
+          "row_id": 27,
+          "concurrency": "1",
+          "output_tok_s": "156.8"
+        },
+        {
+          "row_id": 28,
+          "concurrency": "8",
+          "output_tok_s": "1328.1"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-014.svg",
+      "group": {
+        "model": "Qwen2.5-1.5B-Instruct",
+        "config": "Dedicated Endpoint (managed)",
+        "engine": "SGLang",
+        "engine_version": "managed default",
+        "gpu": "RTX PRO 6000",
+        "gpu_count": "1",
+        "area": "dedicated-endpoints",
+        "workload": "same prompt for every request, 220 in / 256 out",
+        "precision": "BF16",
+        "input_tokens": "220",
+        "output_tokens": "256",
+        "date": "2026-11-20"
+      },
+      "points": [
+        {
+          "row_id": 45,
+          "concurrency": "1",
+          "output_tok_s": "263.2"
+        },
+        {
+          "row_id": 46,
+          "concurrency": "8",
+          "output_tok_s": "2266.1"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-015.svg",
+      "group": {
+        "model": "Qwen2.5-1.5B-Instruct",
+        "config": "Dedicated Endpoint (managed)",
+        "engine": "vLLM",
+        "engine_version": "managed default",
+        "gpu": "A100 40GB SXM",
+        "gpu_count": "1",
+        "area": "dedicated-endpoints",
+        "workload": "same prompt for every request, 220 in / 256 out",
+        "precision": "BF16",
+        "input_tokens": "220",
+        "output_tokens": "256",
+        "date": "2026-11-20"
+      },
+      "points": [
+        {
+          "row_id": 15,
+          "concurrency": "1",
+          "output_tok_s": "211.2"
+        },
+        {
+          "row_id": 16,
+          "concurrency": "4",
+          "output_tok_s": "937.2"
+        },
+        {
+          "row_id": 17,
+          "concurrency": "8",
+          "output_tok_s": "1838.9"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-016.svg",
+      "group": {
+        "model": "Qwen2.5-1.5B-Instruct",
+        "config": "Dedicated Endpoint (managed)",
+        "engine": "vLLM",
+        "engine_version": "managed default",
+        "gpu": "A100 80GB PCIe",
+        "gpu_count": "1",
+        "area": "dedicated-endpoints",
+        "workload": "same prompt for every request, 220 in / 256 out",
+        "precision": "BF16",
+        "input_tokens": "220",
+        "output_tokens": "256",
+        "date": "2026-11-20"
+      },
+      "points": [
+        {
+          "row_id": 21,
+          "concurrency": "1",
+          "output_tok_s": "228.1"
+        },
+        {
+          "row_id": 22,
+          "concurrency": "4",
+          "output_tok_s": "1030.8"
+        },
+        {
+          "row_id": 23,
+          "concurrency": "8",
+          "output_tok_s": "2026.9"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-017.svg",
+      "group": {
+        "model": "Qwen2.5-1.5B-Instruct",
+        "config": "Dedicated Endpoint (managed)",
+        "engine": "vLLM",
+        "engine_version": "managed default",
+        "gpu": "A40",
+        "gpu_count": "1",
+        "area": "dedicated-endpoints",
+        "workload": "same prompt for every request, 220 in / 256 out",
+        "precision": "BF16",
+        "input_tokens": "220",
+        "output_tokens": "256",
+        "date": "2026-11-20"
+      },
+      "points": [
+        {
+          "row_id": 47,
+          "concurrency": "1",
+          "output_tok_s": "140.1"
+        },
+        {
+          "row_id": 48,
+          "concurrency": "4",
+          "output_tok_s": "561.5"
+        },
+        {
+          "row_id": 49,
+          "concurrency": "8",
+          "output_tok_s": "1101.6"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-018.svg",
+      "group": {
+        "model": "Qwen2.5-1.5B-Instruct",
+        "config": "Dedicated Endpoint (managed)",
+        "engine": "vLLM",
+        "engine_version": "managed default",
+        "gpu": "B200",
+        "gpu_count": "1",
+        "area": "dedicated-endpoints",
+        "workload": "same prompt for every request, 220 in / 256 out",
+        "precision": "BF16",
+        "input_tokens": "220",
+        "output_tokens": "256",
+        "date": "2026-11-20"
+      },
+      "points": [
+        {
+          "row_id": 32,
+          "concurrency": "1",
+          "output_tok_s": "585.8"
+        },
+        {
+          "row_id": 33,
+          "concurrency": "4",
+          "output_tok_s": "2214.1"
+        },
+        {
+          "row_id": 34,
+          "concurrency": "8",
+          "output_tok_s": "4372.7"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-019.svg",
+      "group": {
+        "model": "Qwen2.5-1.5B-Instruct",
+        "config": "Dedicated Endpoint (managed)",
+        "engine": "vLLM",
+        "engine_version": "managed default",
+        "gpu": "B300",
+        "gpu_count": "1",
+        "area": "dedicated-endpoints",
+        "workload": "same prompt for every request, 220 in / 256 out",
+        "precision": "BF16",
+        "input_tokens": "220",
+        "output_tokens": "256",
+        "date": "2026-11-20"
+      },
+      "points": [
+        {
+          "row_id": 35,
+          "concurrency": "1",
+          "output_tok_s": "594"
+        },
+        {
+          "row_id": 36,
+          "concurrency": "4",
+          "output_tok_s": "2234.5"
+        },
+        {
+          "row_id": 37,
+          "concurrency": "8",
+          "output_tok_s": "4316.3"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-020.svg",
+      "group": {
+        "model": "Qwen2.5-1.5B-Instruct",
+        "config": "Dedicated Endpoint (managed)",
+        "engine": "vLLM",
+        "engine_version": "managed default",
+        "gpu": "H100 SXM",
+        "gpu_count": "1",
+        "area": "dedicated-endpoints",
+        "workload": "same prompt for every request, 220 in / 256 out",
+        "precision": "BF16",
+        "input_tokens": "220",
+        "output_tokens": "256",
+        "date": "2026-11-20"
+      },
+      "points": [
+        {
+          "row_id": 29,
+          "concurrency": "1",
+          "output_tok_s": "433.4"
+        },
+        {
+          "row_id": 30,
+          "concurrency": "4",
+          "output_tok_s": "1701.8"
+        },
+        {
+          "row_id": 31,
+          "concurrency": "8",
+          "output_tok_s": "3300"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-021.svg",
+      "group": {
+        "model": "Qwen2.5-1.5B-Instruct",
+        "config": "Dedicated Endpoint (managed)",
+        "engine": "vLLM",
+        "engine_version": "managed default",
+        "gpu": "L4",
+        "gpu_count": "1",
+        "area": "dedicated-endpoints",
+        "workload": "same prompt for every request, 220 in / 256 out",
+        "precision": "BF16",
+        "input_tokens": "220",
+        "output_tokens": "256",
+        "date": "2026-11-20"
+      },
+      "points": [
+        {
+          "row_id": 18,
+          "concurrency": "1",
+          "output_tok_s": "74.9"
+        },
+        {
+          "row_id": 19,
+          "concurrency": "4",
+          "output_tok_s": "295.9"
+        },
+        {
+          "row_id": 20,
+          "concurrency": "8",
+          "output_tok_s": "585.3"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-022.svg",
+      "group": {
+        "model": "Qwen2.5-1.5B-Instruct",
+        "config": "Dedicated Endpoint (managed)",
+        "engine": "vLLM",
+        "engine_version": "managed default",
+        "gpu": "L40S",
+        "gpu_count": "1",
+        "area": "dedicated-endpoints",
+        "workload": "same prompt for every request, 220 in / 256 out",
+        "precision": "BF16",
+        "input_tokens": "220",
+        "output_tokens": "256",
+        "date": "2026-11-20"
+      },
+      "points": [
+        {
+          "row_id": 3,
+          "concurrency": "1",
+          "output_tok_s": "176.6"
+        },
+        {
+          "row_id": 9,
+          "concurrency": "1",
+          "output_tok_s": "176.5"
+        },
+        {
+          "row_id": 4,
+          "concurrency": "4",
+          "output_tok_s": "702.1"
+        },
+        {
+          "row_id": 10,
+          "concurrency": "4",
+          "output_tok_s": "700.4"
+        },
+        {
+          "row_id": 5,
+          "concurrency": "8",
+          "output_tok_s": "1398.6"
+        },
+        {
+          "row_id": 11,
+          "concurrency": "8",
+          "output_tok_s": "1394.1"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-023.svg",
+      "group": {
+        "model": "Qwen2.5-1.5B-Instruct",
+        "config": "Dedicated Endpoint (managed)",
+        "engine": "vLLM",
+        "engine_version": "managed default",
+        "gpu": "RTX A4000",
+        "gpu_count": "1",
+        "area": "dedicated-endpoints",
+        "workload": "same prompt for every request, 220 in / 256 out",
+        "precision": "BF16",
+        "input_tokens": "220",
+        "output_tokens": "256",
+        "date": "2026-11-20"
+      },
+      "points": [
+        {
+          "row_id": 6,
+          "concurrency": "1",
+          "output_tok_s": "107.9"
+        },
+        {
+          "row_id": 24,
+          "concurrency": "1",
+          "output_tok_s": "93.3"
+        },
+        {
+          "row_id": 7,
+          "concurrency": "4",
+          "output_tok_s": "421.6"
+        },
+        {
+          "row_id": 25,
+          "concurrency": "4",
+          "output_tok_s": "372.7"
+        },
+        {
+          "row_id": 8,
+          "concurrency": "8",
+          "output_tok_s": "824.6"
+        },
+        {
+          "row_id": 26,
+          "concurrency": "8",
+          "output_tok_s": "727.3"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-024.svg",
+      "group": {
+        "model": "Qwen2.5-1.5B-Instruct",
+        "config": "Dedicated Endpoint (managed)",
+        "engine": "vLLM",
+        "engine_version": "managed default",
+        "gpu": "RTX PRO 6000",
+        "gpu_count": "1",
+        "area": "dedicated-endpoints",
+        "workload": "same prompt for every request, 220 in / 256 out",
+        "precision": "BF16",
+        "input_tokens": "220",
+        "output_tokens": "256",
+        "date": "2026-11-20"
+      },
+      "points": [
+        {
+          "row_id": 12,
+          "concurrency": "1",
+          "output_tok_s": "258.9"
+        },
+        {
+          "row_id": 38,
+          "concurrency": "1",
+          "output_tok_s": "258.7"
+        },
+        {
+          "row_id": 13,
+          "concurrency": "4",
+          "output_tok_s": "1101.9"
+        },
+        {
+          "row_id": 39,
+          "concurrency": "4",
+          "output_tok_s": "1089.4"
+        },
+        {
+          "row_id": 14,
+          "concurrency": "8",
+          "output_tok_s": "2216.2"
+        },
+        {
+          "row_id": 40,
+          "concurrency": "8",
+          "output_tok_s": "2180"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-025.svg",
+      "group": {
+        "model": "Qwen3.5-9B",
+        "config": "Dedicated Endpoint (managed)",
+        "engine": "SGLang",
+        "engine_version": "managed default",
+        "gpu": "H100 SXM",
+        "gpu_count": "1",
+        "area": "dedicated-endpoints",
+        "workload": "same prompt for every request, 220 in / 256 out",
+        "precision": "BF16",
+        "input_tokens": "220",
+        "output_tokens": "256",
+        "date": "2026-11-21"
+      },
+      "points": [
+        {
+          "row_id": 69,
+          "concurrency": "1",
+          "output_tok_s": "154.4"
+        },
+        {
+          "row_id": 70,
+          "concurrency": "8",
+          "output_tok_s": "1151.9"
+        },
+        {
+          "row_id": 71,
+          "concurrency": "16",
+          "output_tok_s": "2026.2"
+        },
+        {
+          "row_id": 72,
+          "concurrency": "32",
+          "output_tok_s": "3871.8"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-026.svg",
+      "group": {
+        "model": "Qwen3.5-9B",
+        "config": "Dedicated Endpoint (managed)",
+        "engine": "vLLM",
+        "engine_version": "managed default",
+        "gpu": "H100 SXM",
+        "gpu_count": "1",
+        "area": "dedicated-endpoints",
+        "workload": "same prompt for every request, 220 in / 256 out",
+        "precision": "BF16",
+        "input_tokens": "220",
+        "output_tokens": "256",
+        "date": "2026-11-21"
+      },
+      "points": [
+        {
+          "row_id": 64,
+          "concurrency": "1",
+          "output_tok_s": "153.7"
+        },
+        {
+          "row_id": 65,
+          "concurrency": "4",
+          "output_tok_s": "589.7"
+        },
+        {
+          "row_id": 66,
+          "concurrency": "8",
+          "output_tok_s": "1123.6"
+        },
+        {
+          "row_id": 67,
+          "concurrency": "16",
+          "output_tok_s": "2106.5"
+        },
+        {
+          "row_id": 68,
+          "concurrency": "32",
+          "output_tok_s": "3770.2"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-027.svg",
+      "group": {
+        "model": "Qwen3.5-9B",
+        "config": "Dedicated Endpoint (managed)",
+        "engine": "vLLM",
+        "engine_version": "managed default",
+        "gpu": "L40S",
+        "gpu_count": "1",
+        "area": "dedicated-endpoints",
+        "workload": "same prompt for every request, 220 in / 256 out",
+        "precision": "BF16",
+        "input_tokens": "220",
+        "output_tokens": "256",
+        "date": "2026-11-21"
+      },
+      "points": [
+        {
+          "row_id": 73,
+          "concurrency": "1",
+          "output_tok_s": "44.5"
+        },
+        {
+          "row_id": 74,
+          "concurrency": "4",
+          "output_tok_s": "163.2"
+        },
+        {
+          "row_id": 75,
+          "concurrency": "8",
+          "output_tok_s": "312.9"
+        },
+        {
+          "row_id": 76,
+          "concurrency": "16",
+          "output_tok_s": "587.9"
+        },
+        {
+          "row_id": 77,
+          "concurrency": "32",
+          "output_tok_s": "1003.1"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-028.svg",
+      "group": {
+        "model": "Qwen3.5-9B",
+        "config": "Dedicated Endpoint (managed)",
+        "engine": "vLLM",
+        "engine_version": "managed default",
+        "gpu": "RTX 6000 Ada",
+        "gpu_count": "1",
+        "area": "dedicated-endpoints",
+        "workload": "same prompt for every request, 220 in / 256 out",
+        "precision": "BF16",
+        "input_tokens": "220",
+        "output_tokens": "256",
+        "date": "2026-11-21"
+      },
+      "points": [
+        {
+          "row_id": 59,
+          "concurrency": "1",
+          "output_tok_s": "52.7"
+        },
+        {
+          "row_id": 60,
+          "concurrency": "4",
+          "output_tok_s": "196.3"
+        },
+        {
+          "row_id": 61,
+          "concurrency": "8",
+          "output_tok_s": "373.3"
+        },
+        {
+          "row_id": 62,
+          "concurrency": "16",
+          "output_tok_s": "695.1"
+        },
+        {
+          "row_id": 63,
+          "concurrency": "32",
+          "output_tok_s": "1207.3"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-029.svg",
+      "group": {
+        "model": "Qwen3.5-9B",
+        "config": "Dedicated Endpoint (managed)",
+        "engine": "vLLM",
+        "engine_version": "managed default",
+        "gpu": "RTX A6000",
+        "gpu_count": "1",
+        "area": "dedicated-endpoints",
+        "workload": "same prompt for every request, 220 in / 256 out",
+        "precision": "BF16",
+        "input_tokens": "220",
+        "output_tokens": "256",
+        "date": "2026-11-20"
+      },
+      "points": [
+        {
+          "row_id": 51,
+          "concurrency": "1",
+          "output_tok_s": "34.4"
+        },
+        {
+          "row_id": 52,
+          "concurrency": "4",
+          "output_tok_s": "134.4"
+        },
+        {
+          "row_id": 53,
+          "concurrency": "8",
+          "output_tok_s": "258.8"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-030.svg",
+      "group": {
+        "model": "Qwen3.5-9B",
+        "config": "Dedicated Endpoint (managed)",
+        "engine": "vLLM",
+        "engine_version": "managed default",
+        "gpu": "RTX PRO 6000",
+        "gpu_count": "1",
+        "area": "dedicated-endpoints",
+        "workload": "same prompt for every request, 220 in / 256 out",
+        "precision": "BF16",
+        "input_tokens": "220",
+        "output_tokens": "256",
+        "date": "2026-11-21"
+      },
+      "points": [
+        {
+          "row_id": 54,
+          "concurrency": "1",
+          "output_tok_s": "84.8"
+        },
+        {
+          "row_id": 55,
+          "concurrency": "4",
+          "output_tok_s": "319.4"
+        },
+        {
+          "row_id": 56,
+          "concurrency": "8",
+          "output_tok_s": "634.5"
+        },
+        {
+          "row_id": 57,
+          "concurrency": "16",
+          "output_tok_s": "1167.5"
+        },
+        {
+          "row_id": 58,
+          "concurrency": "32",
+          "output_tok_s": "1994.6"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-031.svg",
+      "group": {
+        "model": "Qwen3.6-35B-A3B",
+        "config": "Dedicated Endpoint (managed)",
+        "engine": "SGLang",
+        "engine_version": "managed default",
+        "gpu": "H200",
+        "gpu_count": "1",
+        "area": "dedicated-endpoints",
+        "workload": "same prompt for every request, 220 in / 256 out",
+        "precision": "BF16",
+        "input_tokens": "220",
+        "output_tokens": "256",
+        "date": "2026-11-21"
+      },
+      "points": [
+        {
+          "row_id": 98,
+          "concurrency": "1",
+          "output_tok_s": "264.8"
+        },
+        {
+          "row_id": 99,
+          "concurrency": "8",
+          "output_tok_s": "1839.5"
+        },
+        {
+          "row_id": 100,
+          "concurrency": "16",
+          "output_tok_s": "3021.9"
+        },
+        {
+          "row_id": 101,
+          "concurrency": "32",
+          "output_tok_s": "4910.7"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-032.svg",
+      "group": {
+        "model": "Qwen3.6-35B-A3B",
+        "config": "Dedicated Endpoint (managed)",
+        "engine": "vLLM",
+        "engine_version": "managed default",
+        "gpu": "H200",
+        "gpu_count": "1",
+        "area": "dedicated-endpoints",
+        "workload": "same prompt for every request, 220 in / 256 out",
+        "precision": "BF16",
+        "input_tokens": "220",
+        "output_tokens": "256",
+        "date": "2026-11-21"
+      },
+      "points": [
+        {
+          "row_id": 89,
+          "concurrency": "1",
+          "output_tok_s": "247.5"
+        },
+        {
+          "row_id": 90,
+          "concurrency": "4",
+          "output_tok_s": "744.1"
+        },
+        {
+          "row_id": 91,
+          "concurrency": "8",
+          "output_tok_s": "1201.4"
+        },
+        {
+          "row_id": 92,
+          "concurrency": "16",
+          "output_tok_s": "2834.5"
+        },
+        {
+          "row_id": 93,
+          "concurrency": "32",
+          "output_tok_s": "3820"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-033.svg",
+      "group": {
+        "model": "Qwen3.6-35B-A3B-FP8",
+        "config": "Dedicated Endpoint (managed)",
+        "engine": "SGLang",
+        "engine_version": "managed default",
+        "gpu": "H100 SXM",
+        "gpu_count": "1",
+        "area": "dedicated-endpoints",
+        "workload": "same prompt for every request, 220 in / 256 out",
+        "precision": "FP8",
+        "input_tokens": "220",
+        "output_tokens": "256",
+        "date": "2026-11-21"
+      },
+      "points": [
+        {
+          "row_id": 94,
+          "concurrency": "1",
+          "output_tok_s": "274.6"
+        },
+        {
+          "row_id": 95,
+          "concurrency": "8",
+          "output_tok_s": "1871"
+        },
+        {
+          "row_id": 96,
+          "concurrency": "16",
+          "output_tok_s": "3161.4"
+        },
+        {
+          "row_id": 97,
+          "concurrency": "32",
+          "output_tok_s": "5433.4"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-034.svg",
+      "group": {
+        "model": "Qwen3.6-35B-A3B-FP8",
+        "config": "Dedicated Endpoint (managed)",
+        "engine": "vLLM",
+        "engine_version": "managed default",
+        "gpu": "H100 SXM",
+        "gpu_count": "1",
+        "area": "dedicated-endpoints",
+        "workload": "same prompt for every request, 220 in / 256 out",
+        "precision": "FP8",
+        "input_tokens": "220",
+        "output_tokens": "256",
+        "date": "2026-11-21"
+      },
+      "points": [
+        {
+          "row_id": 107,
+          "concurrency": "1",
+          "output_tok_s": "265.3"
+        },
+        {
+          "row_id": 108,
+          "concurrency": "4",
+          "output_tok_s": "892.2"
+        },
+        {
+          "row_id": 109,
+          "concurrency": "8",
+          "output_tok_s": "1505.7"
+        },
+        {
+          "row_id": 110,
+          "concurrency": "16",
+          "output_tok_s": "2838.9"
+        },
+        {
+          "row_id": 111,
+          "concurrency": "32",
+          "output_tok_s": "3872.8"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-035.svg",
+      "group": {
+        "model": "Qwen3.6-35B-A3B-FP8",
+        "config": "Dedicated Endpoint (managed)",
+        "engine": "vLLM",
+        "engine_version": "managed default",
+        "gpu": "RTX 6000 Ada",
+        "gpu_count": "1",
+        "area": "dedicated-endpoints",
+        "workload": "same prompt for every request, 220 in / 256 out",
+        "precision": "FP8",
+        "input_tokens": "220",
+        "output_tokens": "256",
+        "date": "2026-11-21"
+      },
+      "points": [
+        {
+          "row_id": 102,
+          "concurrency": "1",
+          "output_tok_s": "146.8"
+        },
+        {
+          "row_id": 103,
+          "concurrency": "4",
+          "output_tok_s": "415.2"
+        },
+        {
+          "row_id": 104,
+          "concurrency": "8",
+          "output_tok_s": "643.1"
+        },
+        {
+          "row_id": 105,
+          "concurrency": "16",
+          "output_tok_s": "1075.8"
+        },
+        {
+          "row_id": 106,
+          "concurrency": "32",
+          "output_tok_s": "1577.9"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-036.svg",
+      "group": {
+        "model": "Qwen3.6-35B-A3B-FP8",
+        "config": "Dedicated Endpoint (managed)",
+        "engine": "vLLM",
+        "engine_version": "managed default",
+        "gpu": "RTX A6000",
+        "gpu_count": "1",
+        "area": "dedicated-endpoints",
+        "workload": "same prompt for every request, 220 in / 256 out",
+        "precision": "FP8",
+        "input_tokens": "220",
+        "output_tokens": "256",
+        "date": "2026-11-21"
+      },
+      "points": [
+        {
+          "row_id": 79,
+          "concurrency": "1",
+          "output_tok_s": "124"
+        },
+        {
+          "row_id": 80,
+          "concurrency": "4",
+          "output_tok_s": "357.5"
+        },
+        {
+          "row_id": 81,
+          "concurrency": "8",
+          "output_tok_s": "614"
+        },
+        {
+          "row_id": 82,
+          "concurrency": "16",
+          "output_tok_s": "972.9"
+        },
+        {
+          "row_id": 83,
+          "concurrency": "32",
+          "output_tok_s": "1395.2"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-037.svg",
+      "group": {
+        "model": "Qwen3.6-35B-A3B-FP8",
+        "config": "Dedicated Endpoint (managed)",
+        "engine": "vLLM",
+        "engine_version": "managed default",
+        "gpu": "RTX PRO 6000",
+        "gpu_count": "1",
+        "area": "dedicated-endpoints",
+        "workload": "same prompt for every request, 220 in / 256 out",
+        "precision": "FP8",
+        "input_tokens": "220",
+        "output_tokens": "256",
+        "date": "2026-11-21"
+      },
+      "points": [
+        {
+          "row_id": 84,
+          "concurrency": "1",
+          "output_tok_s": "201.6"
+        },
+        {
+          "row_id": 85,
+          "concurrency": "4",
+          "output_tok_s": "617.4"
+        },
+        {
+          "row_id": 86,
+          "concurrency": "8",
+          "output_tok_s": "987.5"
+        },
+        {
+          "row_id": 87,
+          "concurrency": "16",
+          "output_tok_s": "1965.7"
+        },
+        {
+          "row_id": 88,
+          "concurrency": "32",
+          "output_tok_s": "3243.4"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-038.svg",
+      "group": {
+        "model": "Qwen3.8-27B",
+        "config": "Dedicated Endpoint (managed)",
+        "engine": "SGLang",
+        "engine_version": "managed default",
+        "gpu": "H200",
+        "gpu_count": "1",
+        "area": "dedicated-endpoints",
+        "workload": "same prompt for every request, 220 in / 256 out",
+        "precision": "BF16",
+        "input_tokens": "220",
+        "output_tokens": "256",
+        "date": "2026-11-21"
+      },
+      "points": [
+        {
+          "row_id": 184,
+          "concurrency": "1",
+          "output_tok_s": "68.1"
+        },
+        {
+          "row_id": 185,
+          "concurrency": "8",
+          "output_tok_s": "498"
+        },
+        {
+          "row_id": 186,
+          "concurrency": "16",
+          "output_tok_s": "930.5"
+        },
+        {
+          "row_id": 187,
+          "concurrency": "32",
+          "output_tok_s": "1676.4"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-039.svg",
+      "group": {
+        "model": "Qwen3.8-27B",
+        "config": "Dedicated Endpoint (managed)",
+        "engine": "vLLM",
+        "engine_version": "managed default",
+        "gpu": "H200",
+        "gpu_count": "1",
+        "area": "dedicated-endpoints",
+        "workload": "same prompt for every request, 220 in / 256 out",
+        "precision": "BF16",
+        "input_tokens": "220",
+        "output_tokens": "256",
+        "date": "2026-11-21"
+      },
+      "points": [
+        {
+          "row_id": 170,
+          "concurrency": "1",
+          "output_tok_s": "66.4"
+        },
+        {
+          "row_id": 171,
+          "concurrency": "4",
+          "output_tok_s": "254.6"
+        },
+        {
+          "row_id": 172,
+          "concurrency": "8",
+          "output_tok_s": "485.6"
+        },
+        {
+          "row_id": 173,
+          "concurrency": "16",
+          "output_tok_s": "919.2"
+        },
+        {
+          "row_id": 174,
+          "concurrency": "32",
+          "output_tok_s": "1646.2"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-040.svg",
+      "group": {
+        "model": "Qwen3.8-27B-FP8",
+        "config": "Dedicated Endpoint (managed)",
+        "engine": "SGLang",
+        "engine_version": "managed default",
+        "gpu": "H100 SXM",
+        "gpu_count": "1",
+        "area": "dedicated-endpoints",
+        "workload": "same prompt for every request, 220 in / 256 out",
+        "precision": "FP8",
+        "input_tokens": "220",
+        "output_tokens": "256",
+        "date": "2026-11-21"
+      },
+      "points": [
+        {
+          "row_id": 180,
+          "concurrency": "1",
+          "output_tok_s": "84.3"
+        },
+        {
+          "row_id": 181,
+          "concurrency": "8",
+          "output_tok_s": "587.6"
+        },
+        {
+          "row_id": 182,
+          "concurrency": "16",
+          "output_tok_s": "1090.7"
+        },
+        {
+          "row_id": 183,
+          "concurrency": "32",
+          "output_tok_s": "1111.2"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-041.svg",
+      "group": {
+        "model": "Qwen3.8-27B-FP8",
+        "config": "Dedicated Endpoint (managed)",
+        "engine": "vLLM",
+        "engine_version": "managed default",
+        "gpu": "B200",
+        "gpu_count": "1",
+        "area": "dedicated-endpoints",
+        "workload": "same prompt for every request, 220 in / 256 out",
+        "precision": "FP8",
+        "input_tokens": "220",
+        "output_tokens": "256",
+        "date": "2026-11-21"
+      },
+      "points": [
+        {
+          "row_id": 175,
+          "concurrency": "1",
+          "output_tok_s": "111.6"
+        },
+        {
+          "row_id": 176,
+          "concurrency": "4",
+          "output_tok_s": "422.4"
+        },
+        {
+          "row_id": 177,
+          "concurrency": "8",
+          "output_tok_s": "811.7"
+        },
+        {
+          "row_id": 178,
+          "concurrency": "16",
+          "output_tok_s": "1514"
+        },
+        {
+          "row_id": 179,
+          "concurrency": "32",
+          "output_tok_s": "2659.7"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-042.svg",
+      "group": {
+        "model": "Qwen3.8-27B-FP8",
+        "config": "Dedicated Endpoint (managed)",
+        "engine": "vLLM",
+        "engine_version": "managed default",
+        "gpu": "H100 SXM",
+        "gpu_count": "1",
+        "area": "dedicated-endpoints",
+        "workload": "same prompt for every request, 220 in / 256 out",
+        "precision": "FP8",
+        "input_tokens": "220",
+        "output_tokens": "256",
+        "date": "2026-11-21"
+      },
+      "points": [
+        {
+          "row_id": 188,
+          "concurrency": "1",
+          "output_tok_s": "80.7"
+        },
+        {
+          "row_id": 189,
+          "concurrency": "4",
+          "output_tok_s": "302.5"
+        },
+        {
+          "row_id": 190,
+          "concurrency": "8",
+          "output_tok_s": "575.4"
+        },
+        {
+          "row_id": 191,
+          "concurrency": "16",
+          "output_tok_s": "1061.7"
+        },
+        {
+          "row_id": 192,
+          "concurrency": "32",
+          "output_tok_s": "1830.7"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-043.svg",
+      "group": {
+        "model": "Qwen3.8-27B-FP8",
+        "config": "Dedicated Endpoint (managed)",
+        "engine": "vLLM",
+        "engine_version": "managed default",
+        "gpu": "H200",
+        "gpu_count": "1",
+        "area": "dedicated-endpoints",
+        "workload": "same prompt for every request, 220 in / 256 out",
+        "precision": "FP8",
+        "input_tokens": "220",
+        "output_tokens": "256",
+        "date": "2026-11-21"
+      },
+      "points": [
+        {
+          "row_id": 193,
+          "concurrency": "1",
+          "output_tok_s": "96"
+        },
+        {
+          "row_id": 194,
+          "concurrency": "4",
+          "output_tok_s": "358"
+        },
+        {
+          "row_id": 195,
+          "concurrency": "8",
+          "output_tok_s": "697.2"
+        },
+        {
+          "row_id": 196,
+          "concurrency": "16",
+          "output_tok_s": "1294"
+        },
+        {
+          "row_id": 197,
+          "concurrency": "32",
+          "output_tok_s": "2246.1"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-044.svg",
+      "group": {
+        "model": "Qwen3.8-27B-FP8",
+        "config": "Dedicated Endpoint (managed)",
+        "engine": "vLLM",
+        "engine_version": "managed default",
+        "gpu": "L40S",
+        "gpu_count": "1",
+        "area": "dedicated-endpoints",
+        "workload": "same prompt for every request, 220 in / 256 out",
+        "precision": "FP8",
+        "input_tokens": "220",
+        "output_tokens": "256",
+        "date": "2026-11-20"
+      },
+      "points": [
+        {
+          "row_id": 155,
+          "concurrency": "1",
+          "output_tok_s": "25.5"
+        },
+        {
+          "row_id": 158,
+          "concurrency": "1",
+          "output_tok_s": "25.5"
+        },
+        {
+          "row_id": 156,
+          "concurrency": "4",
+          "output_tok_s": "95"
+        },
+        {
+          "row_id": 157,
+          "concurrency": "8",
+          "output_tok_s": "181.3"
+        },
+        {
+          "row_id": 159,
+          "concurrency": "8",
+          "output_tok_s": "181.4"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-045.svg",
+      "group": {
+        "model": "Qwen3.8-27B-FP8",
+        "config": "Dedicated Endpoint (managed)",
+        "engine": "vLLM",
+        "engine_version": "managed default",
+        "gpu": "RTX 6000 Ada",
+        "gpu_count": "1",
+        "area": "dedicated-endpoints",
+        "workload": "same prompt for every request, 220 in / 256 out",
+        "precision": "FP8",
+        "input_tokens": "220",
+        "output_tokens": "256",
+        "date": "2026-11-21"
+      },
+      "points": [
+        {
+          "row_id": 165,
+          "concurrency": "1",
+          "output_tok_s": "26.8"
+        },
+        {
+          "row_id": 166,
+          "concurrency": "4",
+          "output_tok_s": "100"
+        },
+        {
+          "row_id": 167,
+          "concurrency": "8",
+          "output_tok_s": "189.9"
+        },
+        {
+          "row_id": 168,
+          "concurrency": "16",
+          "output_tok_s": "335.4"
+        },
+        {
+          "row_id": 169,
+          "concurrency": "32",
+          "output_tok_s": "528.3"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-046.svg",
+      "group": {
+        "model": "Qwen3.8-27B-FP8",
+        "config": "Dedicated Endpoint (managed)",
+        "engine": "vLLM",
+        "engine_version": "managed default",
+        "gpu": "RTX PRO 6000",
+        "gpu_count": "1",
+        "area": "dedicated-endpoints",
+        "workload": "same prompt for every request, 220 in / 256 out",
+        "precision": "FP8",
+        "input_tokens": "220",
+        "output_tokens": "256",
+        "date": "2026-11-21"
+      },
+      "points": [
+        {
+          "row_id": 160,
+          "concurrency": "1",
+          "output_tok_s": "45.6"
+        },
+        {
+          "row_id": 161,
+          "concurrency": "4",
+          "output_tok_s": "170.9"
+        },
+        {
+          "row_id": 162,
+          "concurrency": "8",
+          "output_tok_s": "332.7"
+        },
+        {
+          "row_id": 163,
+          "concurrency": "16",
+          "output_tok_s": "609.7"
+        },
+        {
+          "row_id": 164,
+          "concurrency": "32",
+          "output_tok_s": "1049.5"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-047.svg",
+      "group": {
+        "model": "gemma-4-26B-A4B-it",
+        "config": "Dedicated Endpoint (managed)",
+        "engine": "SGLang",
+        "engine_version": "managed default",
+        "gpu": "H100 SXM",
+        "gpu_count": "1",
+        "area": "dedicated-endpoints",
+        "workload": "same prompt for every request, 220 in / 256 out",
+        "precision": "BF16",
+        "input_tokens": "220",
+        "output_tokens": "256",
+        "date": "2026-11-21"
+      },
+      "points": [
+        {
+          "row_id": 229,
+          "concurrency": "1",
+          "output_tok_s": "192.8"
+        },
+        {
+          "row_id": 230,
+          "concurrency": "8",
+          "output_tok_s": "1017.9"
+        },
+        {
+          "row_id": 231,
+          "concurrency": "16",
+          "output_tok_s": "2128.4"
+        },
+        {
+          "row_id": 232,
+          "concurrency": "32",
+          "output_tok_s": "3952.9"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-048.svg",
+      "group": {
+        "model": "gemma-4-26B-A4B-it",
+        "config": "Dedicated Endpoint (managed)",
+        "engine": "vLLM",
+        "engine_version": "managed default",
+        "gpu": "H100 SXM",
+        "gpu_count": "1",
+        "area": "dedicated-endpoints",
+        "workload": "same prompt for every request, 220 in / 256 out",
+        "precision": "BF16",
+        "input_tokens": "220",
+        "output_tokens": "256",
+        "date": "2026-11-21"
+      },
+      "points": [
+        {
+          "row_id": 224,
+          "concurrency": "1",
+          "output_tok_s": "201.3"
+        },
+        {
+          "row_id": 225,
+          "concurrency": "4",
+          "output_tok_s": "565.7"
+        },
+        {
+          "row_id": 226,
+          "concurrency": "8",
+          "output_tok_s": "1257.4"
+        },
+        {
+          "row_id": 227,
+          "concurrency": "16",
+          "output_tok_s": "2430.7"
+        },
+        {
+          "row_id": 228,
+          "concurrency": "32",
+          "output_tok_s": "3292.9"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-049.svg",
+      "group": {
+        "model": "gemma-4-26B-A4B-it",
+        "config": "Dedicated Endpoint (managed)",
+        "engine": "vLLM",
+        "engine_version": "managed default",
+        "gpu": "RTX PRO 6000",
+        "gpu_count": "1",
+        "area": "dedicated-endpoints",
+        "workload": "same prompt for every request, 220 in / 256 out",
+        "precision": "BF16",
+        "input_tokens": "220",
+        "output_tokens": "256",
+        "date": "2026-11-21"
+      },
+      "points": [
+        {
+          "row_id": 219,
+          "concurrency": "1",
+          "output_tok_s": "122.1"
+        },
+        {
+          "row_id": 220,
+          "concurrency": "4",
+          "output_tok_s": "358.9"
+        },
+        {
+          "row_id": 221,
+          "concurrency": "8",
+          "output_tok_s": "838.6"
+        },
+        {
+          "row_id": 222,
+          "concurrency": "16",
+          "output_tok_s": "1392.8"
+        },
+        {
+          "row_id": 223,
+          "concurrency": "32",
+          "output_tok_s": "2358.8"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-050.svg",
+      "group": {
+        "model": "GLM-5.3",
+        "config": "DP-attention + EP8 + MTP",
+        "engine": "SGLang",
+        "engine_version": "0.5.21",
+        "gpu": "B300",
+        "gpu_count": "8",
+        "area": "multi-gpu-tuning",
+        "workload": "closed loop, unique prompts, ~1k in / 512 out, 120 s per level",
+        "precision": "NVFP4 (NVIDIA checkpoint)",
+        "input_tokens": "1032",
+        "output_tokens": "512",
+        "date": "2026-10-09"
+      },
+      "points": [
+        {
+          "row_id": 423,
+          "concurrency": "16",
+          "output_tok_s": "1280.6"
+        },
+        {
+          "row_id": 424,
+          "concurrency": "32",
+          "output_tok_s": "1929.2"
+        },
+        {
+          "row_id": 425,
+          "concurrency": "64",
+          "output_tok_s": "2510.1"
+        },
+        {
+          "row_id": 426,
+          "concurrency": "128",
+          "output_tok_s": "4085.2"
+        },
+        {
+          "row_id": 427,
+          "concurrency": "256",
+          "output_tok_s": "6290.4"
+        },
+        {
+          "row_id": 428,
+          "concurrency": "512",
+          "output_tok_s": "10181.1"
+        },
+        {
+          "row_id": 429,
+          "concurrency": "1024",
+          "output_tok_s": "8093.8"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-051.svg",
+      "group": {
+        "model": "GLM-5.3",
+        "config": "DP-attention + EP8 + MTP",
+        "engine": "SGLang",
+        "engine_version": "0.5.21",
+        "gpu": "B300",
+        "gpu_count": "8",
+        "area": "multi-gpu-tuning",
+        "workload": "closed loop, unique prompts, ~7.7k in / 512 out, 120 s per level",
+        "precision": "NVFP4 (NVIDIA checkpoint)",
+        "input_tokens": "7656",
+        "output_tokens": "511",
+        "date": "2026-10-09"
+      },
+      "points": [
+        {
+          "row_id": 432,
+          "concurrency": "64",
+          "output_tok_s": "1177.4"
+        },
+        {
+          "row_id": 433,
+          "concurrency": "128",
+          "output_tok_s": "2163.5"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-052.svg",
+      "group": {
+        "model": "GLM-5.3",
+        "config": "DP-attention + EP8 + MTP",
+        "engine": "SGLang",
+        "engine_version": "0.5.21",
+        "gpu": "B300",
+        "gpu_count": "8",
+        "area": "multi-gpu-tuning",
+        "workload": "closed loop, unique prompts, ~7.7k in / 512 out, 120 s per level",
+        "precision": "NVFP4 (NVIDIA checkpoint)",
+        "input_tokens": "7656",
+        "output_tokens": "512",
+        "date": "2026-10-09"
+      },
+      "points": [
+        {
+          "row_id": 431,
+          "concurrency": "32",
+          "output_tok_s": "843.2"
+        },
+        {
+          "row_id": 434,
+          "concurrency": "256",
+          "output_tok_s": "1965.9"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-053.svg",
+      "group": {
+        "model": "GLM-5.3",
+        "config": "TP4 + FP8 KV + hierarchical cache 200 GB",
+        "engine": "SGLang",
+        "engine_version": "0.5.21",
+        "gpu": "B300",
+        "gpu_count": "4",
+        "area": "multi-gpu-tuning",
+        "workload": "closed loop, unique prompts, ~1k in / 512 out, 120 s per level",
+        "precision": "NVFP4 (NVIDIA checkpoint)",
+        "input_tokens": "1032",
+        "output_tokens": "512",
+        "date": "2026-10-09"
+      },
+      "points": [
+        {
+          "row_id": 457,
+          "concurrency": "16",
+          "output_tok_s": "1279.2"
+        },
+        {
+          "row_id": 458,
+          "concurrency": "32",
+          "output_tok_s": "1967.6"
+        },
+        {
+          "row_id": 459,
+          "concurrency": "64",
+          "output_tok_s": "3012.1"
+        },
+        {
+          "row_id": 461,
+          "concurrency": "256",
+          "output_tok_s": "5952.0"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-054.svg",
+      "group": {
+        "model": "GLM-5.3",
+        "config": "TP4 + FP8 KV + hierarchical cache 200 GB",
+        "engine": "SGLang",
+        "engine_version": "0.5.21",
+        "gpu": "B300",
+        "gpu_count": "4",
+        "area": "multi-gpu-tuning",
+        "workload": "closed loop, unique prompts, ~7.7k in / 512 out, 120 s per level",
+        "precision": "NVFP4 (NVIDIA checkpoint)",
+        "input_tokens": "7656",
+        "output_tokens": "511",
+        "date": "2026-10-09"
+      },
+      "points": [
+        {
+          "row_id": 463,
+          "concurrency": "32",
+          "output_tok_s": "1024.1"
+        },
+        {
+          "row_id": 465,
+          "concurrency": "128",
+          "output_tok_s": "1346.7"
+        },
+        {
+          "row_id": 466,
+          "concurrency": "256",
+          "output_tok_s": "1638.1"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-055.svg",
+      "group": {
+        "model": "GLM-5.3",
+        "config": "TP4 + FP8 KV + hierarchical cache 200 GB",
+        "engine": "SGLang",
+        "engine_version": "0.5.21",
+        "gpu": "B300",
+        "gpu_count": "4",
+        "area": "multi-gpu-tuning",
+        "workload": "closed loop, unique prompts, ~7.7k in / 512 out, 120 s per level",
+        "precision": "NVFP4 (NVIDIA checkpoint)",
+        "input_tokens": "7656",
+        "output_tokens": "512",
+        "date": "2026-10-09"
+      },
+      "points": [
+        {
+          "row_id": 462,
+          "concurrency": "16",
+          "output_tok_s": "756.1"
+        },
+        {
+          "row_id": 464,
+          "concurrency": "64",
+          "output_tok_s": "1228.7"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-056.svg",
+      "group": {
+        "model": "GLM-5.3",
+        "config": "TP4 + MTP (EAGLE 3/1/4)",
+        "engine": "SGLang",
+        "engine_version": "0.5.21",
+        "gpu": "B300",
+        "gpu_count": "4",
+        "area": "multi-gpu-tuning",
+        "workload": "closed loop, unique prompts, ~1k in / 512 out, 120 s per level",
+        "precision": "NVFP4 (NVIDIA checkpoint)",
+        "input_tokens": "1032",
+        "output_tokens": "512",
+        "date": "2026-10-09"
+      },
+      "points": [
+        {
+          "row_id": 446,
+          "concurrency": "8",
+          "output_tok_s": "1163.5"
+        },
+        {
+          "row_id": 448,
+          "concurrency": "32",
+          "output_tok_s": "2451.2"
+        },
+        {
+          "row_id": 449,
+          "concurrency": "64",
+          "output_tok_s": "3242.5"
+        },
+        {
+          "row_id": 450,
+          "concurrency": "128",
+          "output_tok_s": "4165.4"
+        },
+        {
+          "row_id": 451,
+          "concurrency": "256",
+          "output_tok_s": "5134.2"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-057.svg",
+      "group": {
+        "model": "GLM-5.3",
+        "config": "TP4 + MTP (EAGLE 3/1/4)",
+        "engine": "SGLang",
+        "engine_version": "0.5.21",
+        "gpu": "B300",
+        "gpu_count": "4",
+        "area": "multi-gpu-tuning",
+        "workload": "closed loop, unique prompts, ~7.7k in / 512 out, 120 s per level",
+        "precision": "NVFP4 (NVIDIA checkpoint)",
+        "input_tokens": "7656",
+        "output_tokens": "512",
+        "date": "2026-10-09"
+      },
+      "points": [
+        {
+          "row_id": 452,
+          "concurrency": "8",
+          "output_tok_s": "772.6"
+        },
+        {
+          "row_id": 453,
+          "concurrency": "16",
+          "output_tok_s": "980.1"
+        },
+        {
+          "row_id": 454,
+          "concurrency": "32",
+          "output_tok_s": "1154.2"
+        },
+        {
+          "row_id": 455,
+          "concurrency": "64",
+          "output_tok_s": "1550.9"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-058.svg",
+      "group": {
+        "model": "GLM-5.3",
+        "config": "TP4 plain",
+        "engine": "SGLang",
+        "engine_version": "0.5.21",
+        "gpu": "B300",
+        "gpu_count": "4",
+        "area": "multi-gpu-tuning",
+        "workload": "closed loop, unique prompts, ~1k in / 512 out, 120 s per level",
+        "precision": "NVFP4 (NVIDIA checkpoint)",
+        "input_tokens": "1032",
+        "output_tokens": "512",
+        "date": "2026-10-09"
+      },
+      "points": [
+        {
+          "row_id": 393,
+          "concurrency": "64",
+          "output_tok_s": "3039.0"
+        },
+        {
+          "row_id": 394,
+          "concurrency": "128",
+          "output_tok_s": "4542.4"
+        },
+        {
+          "row_id": 395,
+          "concurrency": "256",
+          "output_tok_s": "6038.4"
+        },
+        {
+          "row_id": 396,
+          "concurrency": "512",
+          "output_tok_s": "7728.3"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-059.svg",
+      "group": {
+        "model": "GLM-5.3",
+        "config": "TP8 + DP-attention + EP8",
+        "engine": "SGLang",
+        "engine_version": "0.5.21",
+        "gpu": "B300",
+        "gpu_count": "8",
+        "area": "multi-gpu-tuning",
+        "workload": "closed loop, unique prompts, ~1k in / 512 out, 120 s per level",
+        "precision": "NVFP4 (NVIDIA checkpoint)",
+        "input_tokens": "1032",
+        "output_tokens": "512",
+        "date": "2026-10-09"
+      },
+      "points": [
+        {
+          "row_id": 400,
+          "concurrency": "16",
+          "output_tok_s": "928.2"
+        },
+        {
+          "row_id": 401,
+          "concurrency": "32",
+          "output_tok_s": "1637.1"
+        },
+        {
+          "row_id": 402,
+          "concurrency": "64",
+          "output_tok_s": "2968.8"
+        },
+        {
+          "row_id": 403,
+          "concurrency": "128",
+          "output_tok_s": "5080.6"
+        },
+        {
+          "row_id": 404,
+          "concurrency": "256",
+          "output_tok_s": "7725.9"
+        },
+        {
+          "row_id": 405,
+          "concurrency": "512",
+          "output_tok_s": "11295.4"
+        },
+        {
+          "row_id": 406,
+          "concurrency": "1024",
+          "output_tok_s": "13108.7"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-060.svg",
+      "group": {
+        "model": "GLM-5.3",
+        "config": "TP8 + DP-attention + EP8",
+        "engine": "SGLang",
+        "engine_version": "0.5.21",
+        "gpu": "B300",
+        "gpu_count": "8",
+        "area": "multi-gpu-tuning",
+        "workload": "closed loop, unique prompts, ~7.7k in / 512 out, 120 s per level",
+        "precision": "NVFP4 (NVIDIA checkpoint)",
+        "input_tokens": "7656",
+        "output_tokens": "512",
+        "date": "2026-10-09"
+      },
+      "points": [
+        {
+          "row_id": 407,
+          "concurrency": "16",
+          "output_tok_s": "797.0"
+        },
+        {
+          "row_id": 409,
+          "concurrency": "64",
+          "output_tok_s": "2047.3"
+        },
+        {
+          "row_id": 410,
+          "concurrency": "128",
+          "output_tok_s": "3009.6"
+        },
+        {
+          "row_id": 411,
+          "concurrency": "256",
+          "output_tok_s": "2986.8"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-061.svg",
+      "group": {
+        "model": "GLM-5.3",
+        "config": "TP8 + MTP (EAGLE 3/1/4)",
+        "engine": "SGLang",
+        "engine_version": "0.5.21",
+        "gpu": "B300",
+        "gpu_count": "8",
+        "area": "multi-gpu-tuning",
+        "workload": "closed loop, unique prompts, ~1k in / 512 out, 120 s per level",
+        "precision": "NVFP4 (NVIDIA checkpoint)",
+        "input_tokens": "1032",
+        "output_tokens": "512",
+        "date": "2026-10-09"
+      },
+      "points": [
+        {
+          "row_id": 435,
+          "concurrency": "16",
+          "output_tok_s": "2193.5"
+        },
+        {
+          "row_id": 436,
+          "concurrency": "32",
+          "output_tok_s": "3066.6"
+        },
+        {
+          "row_id": 437,
+          "concurrency": "64",
+          "output_tok_s": "3744.0"
+        },
+        {
+          "row_id": 438,
+          "concurrency": "128",
+          "output_tok_s": "4176.5"
+        },
+        {
+          "row_id": 439,
+          "concurrency": "256",
+          "output_tok_s": "5187.4"
+        },
+        {
+          "row_id": 440,
+          "concurrency": "512",
+          "output_tok_s": "6626.3"
+        },
+        {
+          "row_id": 441,
+          "concurrency": "1024",
+          "output_tok_s": "5134.4"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-062.svg",
+      "group": {
+        "model": "GLM-5.3",
+        "config": "TP8 + MTP (EAGLE 3/1/4)",
+        "engine": "SGLang",
+        "engine_version": "0.5.21",
+        "gpu": "B300",
+        "gpu_count": "8",
+        "area": "multi-gpu-tuning",
+        "workload": "closed loop, unique prompts, ~7.7k in / 512 out, 120 s per level",
+        "precision": "NVFP4 (NVIDIA checkpoint)",
+        "input_tokens": "7656",
+        "output_tokens": "512",
+        "date": "2026-10-09"
+      },
+      "points": [
+        {
+          "row_id": 442,
+          "concurrency": "16",
+          "output_tok_s": "1202.6"
+        },
+        {
+          "row_id": 443,
+          "concurrency": "32",
+          "output_tok_s": "1443.1"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-063.svg",
+      "group": {
+        "model": "GLM-5.3",
+        "config": "TP8 plain",
+        "engine": "SGLang",
+        "engine_version": "0.5.21",
+        "gpu": "B300",
+        "gpu_count": "8",
+        "area": "multi-gpu-tuning",
+        "workload": "closed loop, unique prompts, ~1k in / 512 out, 120 s per level",
+        "precision": "NVFP4 (NVIDIA checkpoint)",
+        "input_tokens": "1032",
+        "output_tokens": "512",
+        "date": "2026-10-09"
+      },
+      "points": [
+        {
+          "row_id": 412,
+          "concurrency": "16",
+          "output_tok_s": "1540.0"
+        },
+        {
+          "row_id": 413,
+          "concurrency": "32",
+          "output_tok_s": "2463.2"
+        },
+        {
+          "row_id": 414,
+          "concurrency": "64",
+          "output_tok_s": "3844.2"
+        },
+        {
+          "row_id": 415,
+          "concurrency": "128",
+          "output_tok_s": "5908.9"
+        },
+        {
+          "row_id": 416,
+          "concurrency": "256",
+          "output_tok_s": "8022.4"
+        },
+        {
+          "row_id": 417,
+          "concurrency": "512",
+          "output_tok_s": "9502.3"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-064.svg",
+      "group": {
+        "model": "GLM-5.3",
+        "config": "TP8 plain",
+        "engine": "SGLang",
+        "engine_version": "0.5.21",
+        "gpu": "B300",
+        "gpu_count": "8",
+        "area": "multi-gpu-tuning",
+        "workload": "closed loop, unique prompts, ~7.7k in / 512 out, 120 s per level",
+        "precision": "NVFP4 (NVIDIA checkpoint)",
+        "input_tokens": "7656",
+        "output_tokens": "512",
+        "date": "2026-10-09"
+      },
+      "points": [
+        {
+          "row_id": 418,
+          "concurrency": "16",
+          "output_tok_s": "939.8"
+        },
+        {
+          "row_id": 420,
+          "concurrency": "64",
+          "output_tok_s": "1478.8"
+        },
+        {
+          "row_id": 422,
+          "concurrency": "256",
+          "output_tok_s": "1638.8"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-065.svg",
+      "group": {
+        "model": "Kimi-K2.7-Code",
+        "config": "DP8 + expert parallel",
+        "engine": "vLLM",
+        "engine_version": "0.31.0",
+        "gpu": "B300",
+        "gpu_count": "8",
+        "area": "multi-gpu-tuning",
+        "workload": "closed loop, unique prompts, ~1k in / 512 out, 120 s per level",
+        "precision": "NVFP4 (NVIDIA checkpoint)",
+        "input_tokens": "989",
+        "output_tokens": "512",
+        "date": "2026-10-09"
+      },
+      "points": [
+        {
+          "row_id": 310,
+          "concurrency": "16",
+          "output_tok_s": "832.5"
+        },
+        {
+          "row_id": 311,
+          "concurrency": "32",
+          "output_tok_s": "1612.0"
+        },
+        {
+          "row_id": 312,
+          "concurrency": "64",
+          "output_tok_s": "2757.1"
+        },
+        {
+          "row_id": 313,
+          "concurrency": "128",
+          "output_tok_s": "5556.4"
+        },
+        {
+          "row_id": 314,
+          "concurrency": "256",
+          "output_tok_s": "8483.9"
+        },
+        {
+          "row_id": 315,
+          "concurrency": "512",
+          "output_tok_s": "13170.6"
+        },
+        {
+          "row_id": 316,
+          "concurrency": "1024",
+          "output_tok_s": "22419.2"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-066.svg",
+      "group": {
+        "model": "Kimi-K2.7-Code",
+        "config": "DP8 + expert parallel",
+        "engine": "vLLM",
+        "engine_version": "0.31.0",
+        "gpu": "B300",
+        "gpu_count": "8",
+        "area": "multi-gpu-tuning",
+        "workload": "closed loop, unique prompts, ~7.7k in / 512 out, 120 s per level",
+        "precision": "NVFP4 (NVIDIA checkpoint)",
+        "input_tokens": "7367",
+        "output_tokens": "512",
+        "date": "2026-10-09"
+      },
+      "points": [
+        {
+          "row_id": 317,
+          "concurrency": "16",
+          "output_tok_s": "759.7"
+        },
+        {
+          "row_id": 318,
+          "concurrency": "32",
+          "output_tok_s": "1386.1"
+        },
+        {
+          "row_id": 319,
+          "concurrency": "64",
+          "output_tok_s": "2207.2"
+        },
+        {
+          "row_id": 320,
+          "concurrency": "128",
+          "output_tok_s": "3278.0"
+        },
+        {
+          "row_id": 321,
+          "concurrency": "256",
+          "output_tok_s": "4867.1"
+        },
+        {
+          "row_id": 322,
+          "concurrency": "512",
+          "output_tok_s": "4704.5"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-067.svg",
+      "group": {
+        "model": "Kimi-K2.7-Code",
+        "config": "TP4 + FP8 KV",
+        "engine": "vLLM",
+        "engine_version": "0.31.0",
+        "gpu": "B300",
+        "gpu_count": "4",
+        "area": "multi-gpu-tuning",
+        "workload": "closed loop, unique prompts, ~1k in / 512 out, 120 s per level",
+        "precision": "NVFP4 (NVIDIA checkpoint)",
+        "input_tokens": "989",
+        "output_tokens": "512",
+        "date": "2026-10-09"
+      },
+      "points": [
+        {
+          "row_id": 351,
+          "concurrency": "16",
+          "output_tok_s": "1384.4"
+        },
+        {
+          "row_id": 352,
+          "concurrency": "32",
+          "output_tok_s": "2186.8"
+        },
+        {
+          "row_id": 353,
+          "concurrency": "64",
+          "output_tok_s": "3278.2"
+        },
+        {
+          "row_id": 354,
+          "concurrency": "128",
+          "output_tok_s": "5066.8"
+        },
+        {
+          "row_id": 355,
+          "concurrency": "256",
+          "output_tok_s": "7317.3"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-068.svg",
+      "group": {
+        "model": "Kimi-K2.7-Code",
+        "config": "TP4 + FP8 KV",
+        "engine": "vLLM",
+        "engine_version": "0.31.0",
+        "gpu": "B300",
+        "gpu_count": "4",
+        "area": "multi-gpu-tuning",
+        "workload": "closed loop, unique prompts, ~7.7k in / 512 out, 120 s per level",
+        "precision": "NVFP4 (NVIDIA checkpoint)",
+        "input_tokens": "7367",
+        "output_tokens": "512",
+        "date": "2026-10-09"
+      },
+      "points": [
+        {
+          "row_id": 356,
+          "concurrency": "16",
+          "output_tok_s": "1004.6"
+        },
+        {
+          "row_id": 357,
+          "concurrency": "32",
+          "output_tok_s": "1430.1"
+        },
+        {
+          "row_id": 358,
+          "concurrency": "64",
+          "output_tok_s": "1649.2"
+        },
+        {
+          "row_id": 359,
+          "concurrency": "128",
+          "output_tok_s": "2275.6"
+        },
+        {
+          "row_id": 360,
+          "concurrency": "256",
+          "output_tok_s": "2893.0"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-069.svg",
+      "group": {
+        "model": "Kimi-K2.7-Code",
+        "config": "TP4 + n-gram speculation",
+        "engine": "vLLM",
+        "engine_version": "0.31.0",
+        "gpu": "B300",
+        "gpu_count": "4",
+        "area": "multi-gpu-tuning",
+        "workload": "closed loop, unique prompts, ~1k in / 512 out, 120 s per level",
+        "precision": "NVFP4 (NVIDIA checkpoint)",
+        "input_tokens": "989",
+        "output_tokens": "512",
+        "date": "2026-10-09"
+      },
+      "points": [
+        {
+          "row_id": 339,
+          "concurrency": "8",
+          "output_tok_s": "234.1"
+        },
+        {
+          "row_id": 341,
+          "concurrency": "32",
+          "output_tok_s": "858.5"
+        },
+        {
+          "row_id": 342,
+          "concurrency": "64",
+          "output_tok_s": "1547.8"
+        },
+        {
+          "row_id": 343,
+          "concurrency": "128",
+          "output_tok_s": "2572.6"
+        },
+        {
+          "row_id": 344,
+          "concurrency": "256",
+          "output_tok_s": "4553.1"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-070.svg",
+      "group": {
+        "model": "Kimi-K2.7-Code",
+        "config": "TP4 + n-gram speculation",
+        "engine": "vLLM",
+        "engine_version": "0.31.0",
+        "gpu": "B300",
+        "gpu_count": "4",
+        "area": "multi-gpu-tuning",
+        "workload": "closed loop, unique prompts, ~7.7k in / 512 out, 120 s per level",
+        "precision": "NVFP4 (NVIDIA checkpoint)",
+        "input_tokens": "7367",
+        "output_tokens": "512",
+        "date": "2026-10-09"
+      },
+      "points": [
+        {
+          "row_id": 345,
+          "concurrency": "8",
+          "output_tok_s": "235.6"
+        },
+        {
+          "row_id": 346,
+          "concurrency": "16",
+          "output_tok_s": "441.3"
+        },
+        {
+          "row_id": 347,
+          "concurrency": "32",
+          "output_tok_s": "820.5"
+        },
+        {
+          "row_id": 348,
+          "concurrency": "64",
+          "output_tok_s": "1348.1"
+        },
+        {
+          "row_id": 349,
+          "concurrency": "128",
+          "output_tok_s": "1666.6"
+        },
+        {
+          "row_id": 350,
+          "concurrency": "256",
+          "output_tok_s": "2622.4"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-071.svg",
+      "group": {
+        "model": "Kimi-K2.7-Code",
+        "config": "TP4 plain",
+        "engine": "vLLM",
+        "engine_version": "0.31.0",
+        "gpu": "B300",
+        "gpu_count": "4",
+        "area": "multi-gpu-tuning",
+        "workload": "closed loop, unique prompts, ~1k in / 512 out, 120 s per level",
+        "precision": "NVFP4 (NVIDIA checkpoint)",
+        "input_tokens": "989",
+        "output_tokens": "512",
+        "date": "2026-10-09"
+      },
+      "points": [
+        {
+          "row_id": 302,
+          "concurrency": "64",
+          "output_tok_s": "3297.6"
+        },
+        {
+          "row_id": 303,
+          "concurrency": "128",
+          "output_tok_s": "4948.9"
+        },
+        {
+          "row_id": 304,
+          "concurrency": "256",
+          "output_tok_s": "7179.3"
+        },
+        {
+          "row_id": 305,
+          "concurrency": "512",
+          "output_tok_s": "9637.9"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-072.svg",
+      "group": {
+        "model": "Kimi-K2.7-Code",
+        "config": "TP4 plain",
+        "engine": "vLLM",
+        "engine_version": "0.31.0",
+        "gpu": "B300",
+        "gpu_count": "4",
+        "area": "multi-gpu-tuning",
+        "workload": "closed loop, unique prompts, ~7.7k in / 512 out, 120 s per level",
+        "precision": "NVFP4 (NVIDIA checkpoint)",
+        "input_tokens": "7367",
+        "output_tokens": "512",
+        "date": "2026-10-09"
+      },
+      "points": [
+        {
+          "row_id": 306,
+          "concurrency": "64",
+          "output_tok_s": "1649.2"
+        },
+        {
+          "row_id": 307,
+          "concurrency": "128",
+          "output_tok_s": "2290.0"
+        },
+        {
+          "row_id": 308,
+          "concurrency": "256",
+          "output_tok_s": "2894.0"
+        },
+        {
+          "row_id": 309,
+          "concurrency": "512",
+          "output_tok_s": "2397.8"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-073.svg",
+      "group": {
+        "model": "Kimi-K2.7-Code",
+        "config": "TP4 x DP2 + expert parallel",
+        "engine": "vLLM",
+        "engine_version": "0.31.0",
+        "gpu": "B300",
+        "gpu_count": "8",
+        "area": "multi-gpu-tuning",
+        "workload": "closed loop, unique prompts, ~1k in / 512 out, 120 s per level",
+        "precision": "NVFP4 (NVIDIA checkpoint)",
+        "input_tokens": "989",
+        "output_tokens": "512",
+        "date": "2026-10-09"
+      },
+      "points": [
+        {
+          "row_id": 336,
+          "concurrency": "32",
+          "output_tok_s": "1774.4"
+        },
+        {
+          "row_id": 337,
+          "concurrency": "64",
+          "output_tok_s": "3141.6"
+        },
+        {
+          "row_id": 338,
+          "concurrency": "128",
+          "output_tok_s": "5342.2"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-074.svg",
+      "group": {
+        "model": "Kimi-K2.7-Code",
+        "config": "TP8 plain",
+        "engine": "vLLM",
+        "engine_version": "0.31.0",
+        "gpu": "B300",
+        "gpu_count": "8",
+        "area": "multi-gpu-tuning",
+        "workload": "closed loop, unique prompts, ~1k in / 512 out, 120 s per level",
+        "precision": "NVFP4 (NVIDIA checkpoint)",
+        "input_tokens": "989",
+        "output_tokens": "512",
+        "date": "2026-10-09"
+      },
+      "points": [
+        {
+          "row_id": 323,
+          "concurrency": "16",
+          "output_tok_s": "1749.8"
+        },
+        {
+          "row_id": 324,
+          "concurrency": "32",
+          "output_tok_s": "2819.2"
+        },
+        {
+          "row_id": 325,
+          "concurrency": "64",
+          "output_tok_s": "4326.3"
+        },
+        {
+          "row_id": 326,
+          "concurrency": "128",
+          "output_tok_s": "6635.3"
+        },
+        {
+          "row_id": 327,
+          "concurrency": "256",
+          "output_tok_s": "9080.9"
+        },
+        {
+          "row_id": 328,
+          "concurrency": "512",
+          "output_tok_s": "11342.2"
+        },
+        {
+          "row_id": 329,
+          "concurrency": "1024",
+          "output_tok_s": "10438.9"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-075.svg",
+      "group": {
+        "model": "Kimi-K2.7-Code",
+        "config": "TP8 plain",
+        "engine": "vLLM",
+        "engine_version": "0.31.0",
+        "gpu": "B300",
+        "gpu_count": "8",
+        "area": "multi-gpu-tuning",
+        "workload": "closed loop, unique prompts, ~7.7k in / 512 out, 120 s per level",
+        "precision": "NVFP4 (NVIDIA checkpoint)",
+        "input_tokens": "7367",
+        "output_tokens": "512",
+        "date": "2026-10-09"
+      },
+      "points": [
+        {
+          "row_id": 330,
+          "concurrency": "16",
+          "output_tok_s": "1241.3"
+        },
+        {
+          "row_id": 331,
+          "concurrency": "32",
+          "output_tok_s": "1683.0"
+        },
+        {
+          "row_id": 332,
+          "concurrency": "64",
+          "output_tok_s": "2313.6"
+        },
+        {
+          "row_id": 333,
+          "concurrency": "128",
+          "output_tok_s": "2934.4"
+        },
+        {
+          "row_id": 334,
+          "concurrency": "256",
+          "output_tok_s": "2500.0"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-076.svg",
+      "group": {
+        "model": "Qwen3.8-27B",
+        "config": null,
+        "engine": "SGLang",
+        "engine_version": "0.5.21",
+        "gpu": "B200",
+        "gpu_count": "1",
+        "area": "multi-gpu-tuning",
+        "workload": "closed loop, unique random prompts (0% prefix cache), ~1k in / 512 out, thinking off, 180 s per level (40 s warm-up)",
+        "precision": "NVFP4 MLP + FP8 attention, FP8 KV",
+        "input_tokens": "1040",
+        "output_tokens": "512",
+        "date": "2026-10-08"
+      },
+      "points": [
+        {
+          "row_id": 123,
+          "concurrency": "1",
+          "output_tok_s": "180.4"
+        },
+        {
+          "row_id": 124,
+          "concurrency": "16",
+          "output_tok_s": "2063.8"
+        },
+        {
+          "row_id": 125,
+          "concurrency": "32",
+          "output_tok_s": "3352.2"
+        },
+        {
+          "row_id": 126,
+          "concurrency": "64",
+          "output_tok_s": "4848.6"
+        },
+        {
+          "row_id": 127,
+          "concurrency": "128",
+          "output_tok_s": "6244.6"
+        },
+        {
+          "row_id": 128,
+          "concurrency": "256",
+          "output_tok_s": "7460.1"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-077.svg",
+      "group": {
+        "model": "Qwen3.8-27B",
+        "config": null,
+        "engine": "SGLang",
+        "engine_version": "0.5.21",
+        "gpu": "B200",
+        "gpu_count": "1",
+        "area": "multi-gpu-tuning",
+        "workload": "closed loop, unique random prompts (0% prefix cache), ~7.8k in / 512 out, thinking off, 180 s per level (40 s warm-up)",
+        "precision": "NVFP4 MLP + FP8 attention, FP8 KV",
+        "input_tokens": "7664",
+        "output_tokens": "512",
+        "date": "2026-10-08"
+      },
+      "points": [
+        {
+          "row_id": 130,
+          "concurrency": "8",
+          "output_tok_s": "863.0"
+        },
+        {
+          "row_id": 131,
+          "concurrency": "16",
+          "output_tok_s": "1226.1"
+        },
+        {
+          "row_id": 132,
+          "concurrency": "32",
+          "output_tok_s": "1551.7"
+        },
+        {
+          "row_id": 133,
+          "concurrency": "64",
+          "output_tok_s": "1872.5"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-078.svg",
+      "group": {
+        "model": "Qwen3.8-27B",
+        "config": null,
+        "engine": "SGLang + MTP",
+        "engine_version": "0.5.21",
+        "gpu": "B200",
+        "gpu_count": "1",
+        "area": "multi-gpu-tuning",
+        "workload": "closed loop, unique prompts, ~1k in / 512 out, thinking off, temperature 0.7, MTP 3 draft tokens",
+        "precision": "NVFP4 MLP + FP8 attention, FP8 KV",
+        "input_tokens": "1040",
+        "output_tokens": "512",
+        "date": "2026-10-08"
+      },
+      "points": [
+        {
+          "row_id": 142,
+          "concurrency": "16",
+          "output_tok_s": "2364.1"
+        },
+        {
+          "row_id": 143,
+          "concurrency": "32",
+          "output_tok_s": "3173.3"
+        },
+        {
+          "row_id": 144,
+          "concurrency": "64",
+          "output_tok_s": "3947.5"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-079.svg",
+      "group": {
+        "model": "Qwen3.8-27B",
+        "config": null,
+        "engine": "SGLang + MTP",
+        "engine_version": "0.5.21",
+        "gpu": "B200",
+        "gpu_count": "1",
+        "area": "multi-gpu-tuning",
+        "workload": "closed loop, unique prompts, ~7.8k in / 512 out, thinking off, temperature 0.7, MTP 3 draft tokens",
+        "precision": "NVFP4 MLP + FP8 attention, FP8 KV",
+        "input_tokens": "7664",
+        "output_tokens": "512",
+        "date": "2026-10-08"
+      },
+      "points": [
+        {
+          "row_id": 145,
+          "concurrency": "1",
+          "output_tok_s": "256.4"
+        },
+        {
+          "row_id": 146,
+          "concurrency": "8",
+          "output_tok_s": "1033.5"
+        },
+        {
+          "row_id": 147,
+          "concurrency": "16",
+          "output_tok_s": "1371.5"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-080.svg",
+      "group": {
+        "model": "Qwen3.8-27B",
+        "config": null,
+        "engine": "vLLM",
+        "engine_version": "0.31.0",
+        "gpu": "B200",
+        "gpu_count": "1",
+        "area": "multi-gpu-tuning",
+        "workload": "closed loop, unique random prompts (0% prefix cache), ~1k in / 512 out, thinking off, 180 s per level (40 s warm-up)",
+        "precision": "NVFP4 MLP + FP8 attention, FP8 KV",
+        "input_tokens": "1040",
+        "output_tokens": "512",
+        "date": "2026-10-08"
+      },
+      "points": [
+        {
+          "row_id": 113,
+          "concurrency": "16",
+          "output_tok_s": "1821.4"
+        },
+        {
+          "row_id": 114,
+          "concurrency": "32",
+          "output_tok_s": "3014.9"
+        },
+        {
+          "row_id": 115,
+          "concurrency": "64",
+          "output_tok_s": "4545.3"
+        },
+        {
+          "row_id": 116,
+          "concurrency": "128",
+          "output_tok_s": "6227.1"
+        },
+        {
+          "row_id": 117,
+          "concurrency": "256",
+          "output_tok_s": "7489.8"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-081.svg",
+      "group": {
+        "model": "Qwen3.8-27B",
+        "config": null,
+        "engine": "vLLM",
+        "engine_version": "0.31.0",
+        "gpu": "B200",
+        "gpu_count": "1",
+        "area": "multi-gpu-tuning",
+        "workload": "closed loop, unique random prompts (0% prefix cache), ~7.8k in / 512 out, thinking off, 180 s per level (40 s warm-up)",
+        "precision": "NVFP4 MLP + FP8 attention, FP8 KV",
+        "input_tokens": "7664",
+        "output_tokens": "512",
+        "date": "2026-10-08"
+      },
+      "points": [
+        {
+          "row_id": 118,
+          "concurrency": "1",
+          "output_tok_s": "145.3"
+        },
+        {
+          "row_id": 119,
+          "concurrency": "8",
+          "output_tok_s": "799.1"
+        },
+        {
+          "row_id": 120,
+          "concurrency": "16",
+          "output_tok_s": "1189.1"
+        },
+        {
+          "row_id": 121,
+          "concurrency": "32",
+          "output_tok_s": "1581.7"
+        },
+        {
+          "row_id": 122,
+          "concurrency": "64",
+          "output_tok_s": "1909.9"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-082.svg",
+      "group": {
+        "model": "Qwen3.8-27B",
+        "config": null,
+        "engine": "vLLM + MTP",
+        "engine_version": "0.31.0",
+        "gpu": "B200",
+        "gpu_count": "1",
+        "area": "multi-gpu-tuning",
+        "workload": "closed loop, unique prompts, ~1k in / 512 out, thinking off, temperature 0.7, MTP 3 draft tokens",
+        "precision": "NVFP4 MLP + FP8 attention, FP8 KV",
+        "input_tokens": "1040",
+        "output_tokens": "512",
+        "date": "2026-10-08"
+      },
+      "points": [
+        {
+          "row_id": 134,
+          "concurrency": "1",
+          "output_tok_s": "265.8"
+        },
+        {
+          "row_id": 135,
+          "concurrency": "16",
+          "output_tok_s": "1779.5"
+        },
+        {
+          "row_id": 136,
+          "concurrency": "32",
+          "output_tok_s": "2396.9"
+        },
+        {
+          "row_id": 137,
+          "concurrency": "64",
+          "output_tok_s": "3407.2"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-083.svg",
+      "group": {
+        "model": "Qwen3.8-27B",
+        "config": null,
+        "engine": "vLLM + MTP",
+        "engine_version": "0.31.0",
+        "gpu": "B200",
+        "gpu_count": "1",
+        "area": "multi-gpu-tuning",
+        "workload": "closed loop, unique prompts, ~7.8k in / 512 out, thinking off, temperature 0.7, MTP 3 draft tokens",
+        "precision": "NVFP4 MLP + FP8 attention, FP8 KV",
+        "input_tokens": "7664",
+        "output_tokens": "512",
+        "date": "2026-10-08"
+      },
+      "points": [
+        {
+          "row_id": 138,
+          "concurrency": "1",
+          "output_tok_s": "232.8"
+        },
+        {
+          "row_id": 139,
+          "concurrency": "8",
+          "output_tok_s": "956.6"
+        },
+        {
+          "row_id": 140,
+          "concurrency": "16",
+          "output_tok_s": "1239.4"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-084.svg",
+      "group": {
+        "model": "DeepSeek-V4.1-Flash",
+        "config": "TP4, tuned settings",
+        "engine": "SGLang",
+        "engine_version": null,
+        "gpu": "B300",
+        "gpu_count": "4",
+        "area": "large-model-validation",
+        "workload": "validation sweep, streaming, prompt about 5900 words",
+        "precision": null,
+        "input_tokens": null,
+        "output_tokens": null,
+        "date": "2026-10-21"
+      },
+      "points": [
+        {
+          "row_id": 204,
+          "concurrency": "8",
+          "output_tok_s": "1638"
+        },
+        {
+          "row_id": 212,
+          "concurrency": "8",
+          "output_tok_s": "1843"
+        },
+        {
+          "row_id": 206,
+          "concurrency": "16",
+          "output_tok_s": "3038"
+        },
+        {
+          "row_id": 213,
+          "concurrency": "16",
+          "output_tok_s": "3046"
+        },
+        {
+          "row_id": 208,
+          "concurrency": "32",
+          "output_tok_s": "4881"
+        },
+        {
+          "row_id": 215,
+          "concurrency": "32",
+          "output_tok_s": "4898"
+        },
+        {
+          "row_id": 210,
+          "concurrency": "64",
+          "output_tok_s": "6902"
+        },
+        {
+          "row_id": 217,
+          "concurrency": "64",
+          "output_tok_s": "7100"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-085.svg",
+      "group": {
+        "model": "DeepSeek-V4.1-Flash",
+        "config": "TP4, tuned settings",
+        "engine": "SGLang",
+        "engine_version": null,
+        "gpu": "B300",
+        "gpu_count": "4",
+        "area": "large-model-validation",
+        "workload": "validation sweep, streaming, prompt about 750 words",
+        "precision": null,
+        "input_tokens": null,
+        "output_tokens": null,
+        "date": "2026-10-21"
+      },
+      "points": [
+        {
+          "row_id": 203,
+          "concurrency": "8",
+          "output_tok_s": "1775"
+        },
+        {
+          "row_id": 211,
+          "concurrency": "8",
+          "output_tok_s": "1869"
+        },
+        {
+          "row_id": 205,
+          "concurrency": "16",
+          "output_tok_s": "3132"
+        },
+        {
+          "row_id": 207,
+          "concurrency": "32",
+          "output_tok_s": "4369"
+        },
+        {
+          "row_id": 214,
+          "concurrency": "32",
+          "output_tok_s": "4924"
+        },
+        {
+          "row_id": 209,
+          "concurrency": "64",
+          "output_tok_s": "6007"
+        },
+        {
+          "row_id": 216,
+          "concurrency": "64",
+          "output_tok_s": "7177"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-086.svg",
+      "group": {
+        "model": "GLM-5.3",
+        "config": "TP4, 256k context",
+        "engine": "SGLang",
+        "engine_version": null,
+        "gpu": "B300",
+        "gpu_count": "4",
+        "area": "large-model-validation",
+        "workload": "validation sweep, streaming, prompt about 5900 words",
+        "precision": null,
+        "input_tokens": null,
+        "output_tokens": null,
+        "date": "2026-10-12"
+      },
+      "points": [
+        {
+          "row_id": 476,
+          "concurrency": "8",
+          "output_tok_s": "990"
+        },
+        {
+          "row_id": 478,
+          "concurrency": "16",
+          "output_tok_s": "1679"
+        },
+        {
+          "row_id": 480,
+          "concurrency": "32",
+          "output_tok_s": "2661"
+        },
+        {
+          "row_id": 482,
+          "concurrency": "64",
+          "output_tok_s": "4020"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-087.svg",
+      "group": {
+        "model": "GLM-5.3",
+        "config": "TP4, 256k context",
+        "engine": "SGLang",
+        "engine_version": null,
+        "gpu": "B300",
+        "gpu_count": "4",
+        "area": "large-model-validation",
+        "workload": "validation sweep, streaming, prompt about 750 words",
+        "precision": null,
+        "input_tokens": null,
+        "output_tokens": null,
+        "date": "2026-10-12"
+      },
+      "points": [
+        {
+          "row_id": 475,
+          "concurrency": "8",
+          "output_tok_s": "1087"
+        },
+        {
+          "row_id": 477,
+          "concurrency": "16",
+          "output_tok_s": "1744"
+        },
+        {
+          "row_id": 479,
+          "concurrency": "32",
+          "output_tok_s": "2846"
+        },
+        {
+          "row_id": 481,
+          "concurrency": "64",
+          "output_tok_s": "4362"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-088.svg",
+      "group": {
+        "model": "GLM-5.3",
+        "config": "TP4, cached-token reporting on",
+        "engine": "SGLang",
+        "engine_version": null,
+        "gpu": "B300",
+        "gpu_count": "4",
+        "area": "large-model-validation",
+        "workload": "validation sweep, streaming, prompt about 5900 words",
+        "precision": null,
+        "input_tokens": null,
+        "output_tokens": null,
+        "date": "2026-10-12"
+      },
+      "points": [
+        {
+          "row_id": 484,
+          "concurrency": "8",
+          "output_tok_s": "998"
+        },
+        {
+          "row_id": 486,
+          "concurrency": "16",
+          "output_tok_s": "1680"
+        },
+        {
+          "row_id": 488,
+          "concurrency": "32",
+          "output_tok_s": "2703"
+        },
+        {
+          "row_id": 490,
+          "concurrency": "64",
+          "output_tok_s": "3990"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-089.svg",
+      "group": {
+        "model": "GLM-5.3",
+        "config": "TP4, cached-token reporting on",
+        "engine": "SGLang",
+        "engine_version": null,
+        "gpu": "B300",
+        "gpu_count": "4",
+        "area": "large-model-validation",
+        "workload": "validation sweep, streaming, prompt about 750 words",
+        "precision": null,
+        "input_tokens": null,
+        "output_tokens": null,
+        "date": "2026-10-12"
+      },
+      "points": [
+        {
+          "row_id": 483,
+          "concurrency": "8",
+          "output_tok_s": "1087"
+        },
+        {
+          "row_id": 485,
+          "concurrency": "16",
+          "output_tok_s": "1769"
+        },
+        {
+          "row_id": 487,
+          "concurrency": "32",
+          "output_tok_s": "2807"
+        },
+        {
+          "row_id": 489,
+          "concurrency": "64",
+          "output_tok_s": "4363"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-090.svg",
+      "group": {
+        "model": "GLM-5.3",
+        "config": "TP4, tuned settings",
+        "engine": "SGLang",
+        "engine_version": null,
+        "gpu": "B300",
+        "gpu_count": "4",
+        "area": "large-model-validation",
+        "workload": "validation sweep, streaming, prompt about 5900 words",
+        "precision": null,
+        "input_tokens": null,
+        "output_tokens": null,
+        "date": "2026-10-10"
+      },
+      "points": [
+        {
+          "row_id": 468,
+          "concurrency": "8",
+          "output_tok_s": "1013"
+        },
+        {
+          "row_id": 470,
+          "concurrency": "16",
+          "output_tok_s": "1657"
+        },
+        {
+          "row_id": 472,
+          "concurrency": "32",
+          "output_tok_s": "2702"
+        },
+        {
+          "row_id": 474,
+          "concurrency": "64",
+          "output_tok_s": "3914"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-091.svg",
+      "group": {
+        "model": "GLM-5.3",
+        "config": "TP4, tuned settings",
+        "engine": "SGLang",
+        "engine_version": null,
+        "gpu": "B300",
+        "gpu_count": "4",
+        "area": "large-model-validation",
+        "workload": "validation sweep, streaming, prompt about 750 words",
+        "precision": null,
+        "input_tokens": null,
+        "output_tokens": null,
+        "date": "2026-10-10"
+      },
+      "points": [
+        {
+          "row_id": 467,
+          "concurrency": "8",
+          "output_tok_s": "1118"
+        },
+        {
+          "row_id": 469,
+          "concurrency": "16",
+          "output_tok_s": "1764"
+        },
+        {
+          "row_id": 471,
+          "concurrency": "32",
+          "output_tok_s": "2762"
+        },
+        {
+          "row_id": 473,
+          "concurrency": "64",
+          "output_tok_s": "4377"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-092.svg",
+      "group": {
+        "model": "GLM-5.3-Flash",
+        "config": "TP4, tuned settings",
+        "engine": "SGLang",
+        "engine_version": null,
+        "gpu": "B300",
+        "gpu_count": "4",
+        "area": "large-model-validation",
+        "workload": "validation sweep, streaming, prompt about 5900 words",
+        "precision": null,
+        "input_tokens": null,
+        "output_tokens": null,
+        "date": "2026-10-21"
+      },
+      "points": [
+        {
+          "row_id": 386,
+          "concurrency": "8",
+          "output_tok_s": "1115"
+        },
+        {
+          "row_id": 388,
+          "concurrency": "16",
+          "output_tok_s": "1579"
+        },
+        {
+          "row_id": 390,
+          "concurrency": "32",
+          "output_tok_s": "2141"
+        },
+        {
+          "row_id": 392,
+          "concurrency": "64",
+          "output_tok_s": "2873"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-093.svg",
+      "group": {
+        "model": "GLM-5.3-Flash",
+        "config": "TP4, tuned settings",
+        "engine": "SGLang",
+        "engine_version": null,
+        "gpu": "B300",
+        "gpu_count": "4",
+        "area": "large-model-validation",
+        "workload": "validation sweep, streaming, prompt about 750 words",
+        "precision": null,
+        "input_tokens": null,
+        "output_tokens": null,
+        "date": "2026-10-21"
+      },
+      "points": [
+        {
+          "row_id": 385,
+          "concurrency": "8",
+          "output_tok_s": "739"
+        },
+        {
+          "row_id": 387,
+          "concurrency": "16",
+          "output_tok_s": "1599"
+        },
+        {
+          "row_id": 389,
+          "concurrency": "32",
+          "output_tok_s": "1865"
+        },
+        {
+          "row_id": 391,
+          "concurrency": "64",
+          "output_tok_s": "2507"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-094.svg",
+      "group": {
+        "model": "Kimi-K2.7-Code",
+        "config": "TP4, 256k context",
+        "engine": "SGLang",
+        "engine_version": null,
+        "gpu": "B300",
+        "gpu_count": "4",
+        "area": "large-model-validation",
+        "workload": "validation sweep, streaming, prompt about 5900 words",
+        "precision": null,
+        "input_tokens": null,
+        "output_tokens": null,
+        "date": "2026-10-12"
+      },
+      "points": [
+        {
+          "row_id": 370,
+          "concurrency": "8",
+          "output_tok_s": "700"
+        },
+        {
+          "row_id": 372,
+          "concurrency": "16",
+          "output_tok_s": "1313"
+        },
+        {
+          "row_id": 374,
+          "concurrency": "32",
+          "output_tok_s": "2141"
+        },
+        {
+          "row_id": 376,
+          "concurrency": "64",
+          "output_tok_s": "3234"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-095.svg",
+      "group": {
+        "model": "Kimi-K2.7-Code",
+        "config": "TP4, 256k context",
+        "engine": "SGLang",
+        "engine_version": null,
+        "gpu": "B300",
+        "gpu_count": "4",
+        "area": "large-model-validation",
+        "workload": "validation sweep, streaming, prompt about 750 words",
+        "precision": null,
+        "input_tokens": null,
+        "output_tokens": null,
+        "date": "2026-10-12"
+      },
+      "points": [
+        {
+          "row_id": 369,
+          "concurrency": "8",
+          "output_tok_s": "811"
+        },
+        {
+          "row_id": 371,
+          "concurrency": "16",
+          "output_tok_s": "1345"
+        },
+        {
+          "row_id": 373,
+          "concurrency": "32",
+          "output_tok_s": "2219"
+        },
+        {
+          "row_id": 375,
+          "concurrency": "64",
+          "output_tok_s": "3668"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-096.svg",
+      "group": {
+        "model": "Kimi-K2.7-Code",
+        "config": "TP4, cached-token reporting on",
+        "engine": "SGLang",
+        "engine_version": null,
+        "gpu": "B300",
+        "gpu_count": "4",
+        "area": "large-model-validation",
+        "workload": "validation sweep, streaming, prompt about 5900 words",
+        "precision": null,
+        "input_tokens": null,
+        "output_tokens": null,
+        "date": "2026-10-12"
+      },
+      "points": [
+        {
+          "row_id": 378,
+          "concurrency": "8",
+          "output_tok_s": "742"
+        },
+        {
+          "row_id": 380,
+          "concurrency": "16",
+          "output_tok_s": "1349"
+        },
+        {
+          "row_id": 382,
+          "concurrency": "32",
+          "output_tok_s": "2122"
+        },
+        {
+          "row_id": 384,
+          "concurrency": "64",
+          "output_tok_s": "3226"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-097.svg",
+      "group": {
+        "model": "Kimi-K2.7-Code",
+        "config": "TP4, cached-token reporting on",
+        "engine": "SGLang",
+        "engine_version": null,
+        "gpu": "B300",
+        "gpu_count": "4",
+        "area": "large-model-validation",
+        "workload": "validation sweep, streaming, prompt about 750 words",
+        "precision": null,
+        "input_tokens": null,
+        "output_tokens": null,
+        "date": "2026-10-12"
+      },
+      "points": [
+        {
+          "row_id": 377,
+          "concurrency": "8",
+          "output_tok_s": "809"
+        },
+        {
+          "row_id": 379,
+          "concurrency": "16",
+          "output_tok_s": "1367"
+        },
+        {
+          "row_id": 381,
+          "concurrency": "32",
+          "output_tok_s": "2217"
+        },
+        {
+          "row_id": 383,
+          "concurrency": "64",
+          "output_tok_s": "3757"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-098.svg",
+      "group": {
+        "model": "Kimi-K2.7-Code",
+        "config": "TP4, tuned settings",
+        "engine": "SGLang",
+        "engine_version": null,
+        "gpu": "B300",
+        "gpu_count": "4",
+        "area": "large-model-validation",
+        "workload": "validation sweep, streaming, prompt about 5900 words",
+        "precision": null,
+        "input_tokens": null,
+        "output_tokens": null,
+        "date": "2026-10-10"
+      },
+      "points": [
+        {
+          "row_id": 362,
+          "concurrency": "8",
+          "output_tok_s": "742"
+        },
+        {
+          "row_id": 364,
+          "concurrency": "16",
+          "output_tok_s": "1341"
+        },
+        {
+          "row_id": 366,
+          "concurrency": "32",
+          "output_tok_s": "2126"
+        },
+        {
+          "row_id": 368,
+          "concurrency": "64",
+          "output_tok_s": "3229"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-099.svg",
+      "group": {
+        "model": "Kimi-K2.7-Code",
+        "config": "TP4, tuned settings",
+        "engine": "SGLang",
+        "engine_version": null,
+        "gpu": "B300",
+        "gpu_count": "4",
+        "area": "large-model-validation",
+        "workload": "validation sweep, streaming, prompt about 750 words",
+        "precision": null,
+        "input_tokens": null,
+        "output_tokens": null,
+        "date": "2026-10-10"
+      },
+      "points": [
+        {
+          "row_id": 361,
+          "concurrency": "8",
+          "output_tok_s": "760"
+        },
+        {
+          "row_id": 363,
+          "concurrency": "16",
+          "output_tok_s": "1398"
+        },
+        {
+          "row_id": 365,
+          "concurrency": "32",
+          "output_tok_s": "2218"
+        },
+        {
+          "row_id": 367,
+          "concurrency": "64",
+          "output_tok_s": "3547"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-100.svg",
+      "group": {
+        "model": "Llama-3.3-70B-Instruct-FP8-dynamic",
+        "config": null,
+        "engine": "vLLM",
+        "engine_version": "0.33.0",
+        "gpu": "H100 SXM",
+        "gpu_count": "1",
+        "area": "single-node-sweeps",
+        "workload": "vllm bench serve, random prompts, ignore EOS, seed 0, prompts = max(8, 2 x concurrency)",
+        "precision": "FP8 weights, 16-bit KV cache",
+        "input_tokens": "1000",
+        "output_tokens": "500",
+        "date": "2026-11-18"
+      },
+      "points": [
+        {
+          "row_id": 268,
+          "concurrency": "1",
+          "output_tok_s": "36.9"
+        },
+        {
+          "row_id": 269,
+          "concurrency": "2",
+          "output_tok_s": "72.5"
+        },
+        {
+          "row_id": 270,
+          "concurrency": "4",
+          "output_tok_s": "139.7"
+        },
+        {
+          "row_id": 271,
+          "concurrency": "8",
+          "output_tok_s": "178.3"
+        },
+        {
+          "row_id": 272,
+          "concurrency": "16",
+          "output_tok_s": "177.4"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-101.svg",
+      "group": {
+        "model": "Llama-3.3-70B-Instruct-FP8-dynamic",
+        "config": null,
+        "engine": "vLLM",
+        "engine_version": "0.33.0",
+        "gpu": "H100 SXM",
+        "gpu_count": "1",
+        "area": "single-node-sweeps",
+        "workload": "vllm bench serve, random prompts, ignore EOS, seed 0, prompts = max(8, 2 x concurrency)",
+        "precision": "FP8 weights, FP8 KV cache",
+        "input_tokens": "1000",
+        "output_tokens": "500",
+        "date": "2026-11-18"
+      },
+      "points": [
+        {
+          "row_id": 273,
+          "concurrency": "8",
+          "output_tok_s": "260.7"
+        },
+        {
+          "row_id": 274,
+          "concurrency": "16",
+          "output_tok_s": "328.0"
+        },
+        {
+          "row_id": 275,
+          "concurrency": "32",
+          "output_tok_s": "324.8"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-102.svg",
+      "group": {
+        "model": "Llama-3.3-70B-Instruct-FP8-dynamic",
+        "config": null,
+        "engine": "vLLM",
+        "engine_version": "0.33.0",
+        "gpu": "RTX PRO 6000",
+        "gpu_count": "1",
+        "area": "single-node-sweeps",
+        "workload": "vllm bench serve, random prompts, ignore EOS, seed 0, prompts = max(8, 2 x concurrency)",
+        "precision": "FP8 weights, 16-bit KV cache",
+        "input_tokens": "1000",
+        "output_tokens": "500",
+        "date": "2026-11-18"
+      },
+      "points": [
+        {
+          "row_id": 276,
+          "concurrency": "1",
+          "output_tok_s": "19.2"
+        },
+        {
+          "row_id": 277,
+          "concurrency": "2",
+          "output_tok_s": "38.3"
+        },
+        {
+          "row_id": 278,
+          "concurrency": "4",
+          "output_tok_s": "76.0"
+        },
+        {
+          "row_id": 279,
+          "concurrency": "8",
+          "output_tok_s": "144.3"
+        },
+        {
+          "row_id": 280,
+          "concurrency": "16",
+          "output_tok_s": "268.6"
+        },
+        {
+          "row_id": 281,
+          "concurrency": "32",
+          "output_tok_s": "471.8"
+        },
+        {
+          "row_id": 282,
+          "concurrency": "64",
+          "output_tok_s": "486.2"
+        },
+        {
+          "row_id": 283,
+          "concurrency": "128",
+          "output_tok_s": "479.1"
+        }
+      ]
+    }
+  ]
+}

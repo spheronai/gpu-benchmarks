@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="48" viewBox="0 0 260 48" role="img" aria-labelledby="title desc">
+<title id="title">Deploy on Spheron</title>
+<desc id="desc">Open the Spheron app homepage to select your own deployment. Not an automatic deployment.</desc>
+<defs><linearGradient id="cta" gradientUnits="userSpaceOnUse" x1="131" y1="-1.59" x2="129" y2="47.37"><stop offset="0%" stop-color="#00ddff"/><stop offset="12.26%" stop-color="#0056f7"/><stop offset="20.48%" stop-color="#0026cd"/><stop offset="95.09%" stop-color="#0059ff"/><stop offset="100%" stop-color="#003699"/></linearGradient></defs>
+<path d="M12 0H260V36L248 48H0V12Z" fill="url(#cta)"/>
+<path d="M22 17v14m-7-7h14" stroke="#ffffff" stroke-width="1.5" fill="none" stroke-linecap="square"/>
+<text x="43" y="30" fill="#ffffff" font-family="SF Pro Display, SF Pro Text, Inter, Arial, sans-serif" font-size="17" font-weight="500">Deploy on Spheron</text>
+</svg>
