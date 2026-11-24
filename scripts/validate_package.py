@@ -21,6 +21,11 @@ SKIP_DIRS = {'.git', '__pycache__', '.venv', 'venv'}
 def validate(root):
     files = [p for p in root.rglob('*') if p.is_file() and not SKIP_DIRS & set(p.relative_to(root).parts) and p.name != '.DS_Store']
     for p in files:
+        if p.suffix == '.png':
+            data = p.read_bytes()
+            assert data.startswith(b'\x89PNG\r\n\x1a\n'), f'Not a PNG: {p.relative_to(root)}'
+            assert not any(chunk in data for chunk in (b'tEXt', b'iTXt', b'zTXt', b'eXIf')), f'PNG metadata in {p.relative_to(root)}'
+            continue
         text = p.read_text(encoding='utf-8')
         if p.suffix == '.py':
             compile(text, str(p.relative_to(root)), 'exec')

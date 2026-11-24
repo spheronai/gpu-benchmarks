@@ -2,9 +2,9 @@
 
 Every chart below holds one exact context fixed: model, configuration, engine and version, GPU and count, area, workload, precision, input and output lengths, and date. Only concurrency changes along the x axis. Each dot is one recorded run, so repeated runs at the same concurrency appear as separate dots. Values are the recorded output tokens per second, not re-measured or averaged.
 
-490 published rows; 16 models; 14 GPU models. Dates: 2026-10-08 to 2026-11-21. Charts are grouped by study: [Spheron Dedicated Endpoints](#spheron-dedicated-endpoints), [Multi-GPU tuning on B200 and B300](#multi-gpu-tuning-on-b200-and-b300), [Large-model validation on B300](#large-model-validation-on-b300), [Single-node sweeps](#single-node-sweeps).
+550 published rows; 18 models; 14 GPU models. Dates: 2026-10-08 to 2026-11-23. Charts are grouped by study: [Spheron Dedicated Endpoints](#spheron-dedicated-endpoints), [Multi-GPU tuning on B200 and B300](#multi-gpu-tuning-on-b200-and-b300), [Large-model validation on B300](#large-model-validation-on-b300), [Single-node sweeps](#single-node-sweeps), [Spheron Research studies](#spheron-research-studies).
 
-102 charts plot 448 of the 490 rows. The other rows belong to contexts with a single concurrency level and are in the CSV only.
+106 charts plot 508 of the 550 rows. The other rows belong to contexts with a single concurrency level and are in the CSV only.
 
 Compare contexts only when their workloads match: prompt length, prompt reuse and timing windows change throughput a lot. "not recorded" means the field was not recorded for that run.
 
@@ -1595,3 +1595,111 @@ November 2026 `vllm bench serve` sweeps and single-request image tests on one no
 | 281 | 32 | 471.8 |
 | 282 | 64 | 486.2 |
 | 283 | 128 | 479.1 |
+
+## Spheron Research studies
+
+Throughput runs from published Spheron Research studies, each with its report, scripts and raw data under `research/`.
+
+### Context 103
+
+**Qwen3.8-27B** on **1x RTX PRO 6000**, vLLM (0.34.0), 2026-11-23
+
+**model**: Qwen3.8-27B | **config**: max-num-seqs 256, prefix caching off | **engine**: vLLM | **engine_version**: 0.34.0 | **gpu**: RTX PRO 6000 | **gpu_count**: 1 | **area**: research | **workload**: vllm bench serve, random prompts, ignore EOS, seed = repeat (1 to 3), prompts = max(8, 4 x concurrency) | **precision**: BF16 weights, 16-bit KV cache | **input_tokens**: 1024 | **output_tokens**: 512 | **date**: 2026-11-23
+
+![Output throughput versus concurrency for exact context 103; numeric data below](../assets/charts/context-103.svg)
+
+| Row | Concurrency | Output tok/s |
+|---:|---:|---:|
+| 491 | 1 | 26.4 |
+| 492 | 1 | 26.4 |
+| 493 | 1 | 26.4 |
+| 494 | 4 | 100.9 |
+| 495 | 4 | 100.9 |
+| 496 | 4 | 100.8 |
+| 497 | 16 | 343.6 |
+| 498 | 16 | 343.6 |
+| 499 | 16 | 343.6 |
+| 500 | 64 | 856.6 |
+| 501 | 64 | 856.5 |
+| 502 | 64 | 856.6 |
+| 503 | 128 | 1052.0 |
+| 504 | 128 | 1052.3 |
+| 505 | 128 | 1052.1 |
+
+### Context 104
+
+**Qwen3.8-27B-AWQ-INT4** on **1x RTX PRO 6000**, vLLM (0.34.0), 2026-11-23
+
+**model**: Qwen3.8-27B-AWQ-INT4 | **config**: max-num-seqs 256, prefix caching off | **engine**: vLLM | **engine_version**: 0.34.0 | **gpu**: RTX PRO 6000 | **gpu_count**: 1 | **area**: research | **workload**: vllm bench serve, random prompts, ignore EOS, seed = repeat (1 to 3), prompts = max(8, 4 x concurrency) | **precision**: INT4 AWQ weights (group 32), 16-bit KV cache | **input_tokens**: 1024 | **output_tokens**: 512 | **date**: 2026-11-23
+
+![Output throughput versus concurrency for exact context 104; numeric data below](../assets/charts/context-104.svg)
+
+| Row | Concurrency | Output tok/s |
+|---:|---:|---:|
+| 536 | 1 | 67.9 |
+| 537 | 1 | 67.9 |
+| 538 | 1 | 67.9 |
+| 539 | 4 | 232.5 |
+| 540 | 4 | 232.4 |
+| 541 | 4 | 232.5 |
+| 542 | 16 | 685.0 |
+| 543 | 16 | 684.4 |
+| 544 | 16 | 684.6 |
+| 545 | 64 | 1182.9 |
+| 546 | 64 | 1182.7 |
+| 547 | 64 | 1182.4 |
+| 548 | 128 | 1292.2 |
+| 549 | 128 | 1292.0 |
+| 550 | 128 | 1292.0 |
+
+### Context 105
+
+**Qwen3.8-27B-FP8** on **1x RTX PRO 6000**, vLLM (0.34.0), 2026-11-23
+
+**model**: Qwen3.8-27B-FP8 | **config**: max-num-seqs 256, prefix caching off | **engine**: vLLM | **engine_version**: 0.34.0 | **gpu**: RTX PRO 6000 | **gpu_count**: 1 | **area**: research | **workload**: vllm bench serve, random prompts, ignore EOS, seed = repeat (1 to 3), prompts = max(8, 4 x concurrency) | **precision**: FP8 weights, 16-bit KV cache | **input_tokens**: 1024 | **output_tokens**: 512 | **date**: 2026-11-23
+
+![Output throughput versus concurrency for exact context 105; numeric data below](../assets/charts/context-105.svg)
+
+| Row | Concurrency | Output tok/s |
+|---:|---:|---:|
+| 506 | 1 | 45.4 |
+| 507 | 1 | 45.5 |
+| 508 | 1 | 45.4 |
+| 509 | 4 | 165.4 |
+| 510 | 4 | 165.3 |
+| 511 | 4 | 165.3 |
+| 512 | 16 | 553.1 |
+| 513 | 16 | 553.0 |
+| 514 | 16 | 552.9 |
+| 515 | 64 | 1266.5 |
+| 516 | 64 | 1265.7 |
+| 517 | 64 | 1265.9 |
+| 518 | 128 | 1567.3 |
+| 519 | 128 | 1567.4 |
+| 520 | 128 | 1567.3 |
+
+### Context 106
+
+**Qwen3.8-27B-NVFP4** on **1x RTX PRO 6000**, vLLM (0.34.0), 2026-11-23
+
+**model**: Qwen3.8-27B-NVFP4 | **config**: max-num-seqs 256, prefix caching off | **engine**: vLLM | **engine_version**: 0.34.0 | **gpu**: RTX PRO 6000 | **gpu_count**: 1 | **area**: research | **workload**: vllm bench serve, random prompts, ignore EOS, seed = repeat (1 to 3), prompts = max(8, 4 x concurrency) | **precision**: NVFP4 weights (Unsloth checkpoint), 16-bit KV cache | **input_tokens**: 1024 | **output_tokens**: 512 | **date**: 2026-11-23
+
+![Output throughput versus concurrency for exact context 106; numeric data below](../assets/charts/context-106.svg)
+
+| Row | Concurrency | Output tok/s |
+|---:|---:|---:|
+| 521 | 1 | 59.0 |
+| 522 | 1 | 59.0 |
+| 523 | 1 | 59.0 |
+| 524 | 4 | 213.3 |
+| 525 | 4 | 213.2 |
+| 526 | 4 | 213.2 |
+| 527 | 16 | 700.4 |
+| 528 | 16 | 700.0 |
+| 529 | 16 | 699.7 |
+| 530 | 64 | 1521.0 |
+| 531 | 64 | 1520.6 |
+| 532 | 64 | 1520.0 |
+| 533 | 128 | 1875.8 |
+| 534 | 128 | 1875.8 |
+| 535 | 128 | 1875.9 |

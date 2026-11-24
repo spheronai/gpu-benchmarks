@@ -5,15 +5,15 @@ type: dataset
 authors:
   - name: "Spheron"
     website: "https://www.spheron.network"
-version: "2026.11.23"
-date-released: "2026-11-23"
+version: "2026.11.24"
+date-released: "2026-11-24"
 repository-code: "https://github.com/spheronai/gpu-benchmarks"
 url: "https://github.com/spheronai/gpu-benchmarks"
 license:
   - CC-BY-4.0
   - MIT
 abstract: >-
-  490 dated LLM inference load measurements recorded between 2026-10-08 and 2026-11-21
+  550 dated LLM inference load measurements recorded between 2026-10-08 and 2026-11-23
   on NVIDIA B300, B200, H200, H100, RTX PRO 6000, L40S, A100 and other GPUs with
   vLLM and SGLang, plus a dependency-free Python client for measuring any
   OpenAI-compatible endpoint. Data and charts are CC BY 4.0; code is MIT.

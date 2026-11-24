@@ -4178,6 +4178,382 @@
           "output_tok_s": "479.1"
         }
       ]
+    },
+    {
+      "asset": "assets/charts/context-103.svg",
+      "group": {
+        "model": "Qwen3.8-27B",
+        "config": "max-num-seqs 256, prefix caching off",
+        "engine": "vLLM",
+        "engine_version": "0.34.0",
+        "gpu": "RTX PRO 6000",
+        "gpu_count": "1",
+        "area": "research",
+        "workload": "vllm bench serve, random prompts, ignore EOS, seed = repeat (1 to 3), prompts = max(8, 4 x concurrency)",
+        "precision": "BF16 weights, 16-bit KV cache",
+        "input_tokens": "1024",
+        "output_tokens": "512",
+        "date": "2026-11-23"
+      },
+      "points": [
+        {
+          "row_id": 491,
+          "concurrency": "1",
+          "output_tok_s": "26.4"
+        },
+        {
+          "row_id": 492,
+          "concurrency": "1",
+          "output_tok_s": "26.4"
+        },
+        {
+          "row_id": 493,
+          "concurrency": "1",
+          "output_tok_s": "26.4"
+        },
+        {
+          "row_id": 494,
+          "concurrency": "4",
+          "output_tok_s": "100.9"
+        },
+        {
+          "row_id": 495,
+          "concurrency": "4",
+          "output_tok_s": "100.9"
+        },
+        {
+          "row_id": 496,
+          "concurrency": "4",
+          "output_tok_s": "100.8"
+        },
+        {
+          "row_id": 497,
+          "concurrency": "16",
+          "output_tok_s": "343.6"
+        },
+        {
+          "row_id": 498,
+          "concurrency": "16",
+          "output_tok_s": "343.6"
+        },
+        {
+          "row_id": 499,
+          "concurrency": "16",
+          "output_tok_s": "343.6"
+        },
+        {
+          "row_id": 500,
+          "concurrency": "64",
+          "output_tok_s": "856.6"
+        },
+        {
+          "row_id": 501,
+          "concurrency": "64",
+          "output_tok_s": "856.5"
+        },
+        {
+          "row_id": 502,
+          "concurrency": "64",
+          "output_tok_s": "856.6"
+        },
+        {
+          "row_id": 503,
+          "concurrency": "128",
+          "output_tok_s": "1052.0"
+        },
+        {
+          "row_id": 504,
+          "concurrency": "128",
+          "output_tok_s": "1052.3"
+        },
+        {
+          "row_id": 505,
+          "concurrency": "128",
+          "output_tok_s": "1052.1"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-104.svg",
+      "group": {
+        "model": "Qwen3.8-27B-AWQ-INT4",
+        "config": "max-num-seqs 256, prefix caching off",
+        "engine": "vLLM",
+        "engine_version": "0.34.0",
+        "gpu": "RTX PRO 6000",
+        "gpu_count": "1",
+        "area": "research",
+        "workload": "vllm bench serve, random prompts, ignore EOS, seed = repeat (1 to 3), prompts = max(8, 4 x concurrency)",
+        "precision": "INT4 AWQ weights (group 32), 16-bit KV cache",
+        "input_tokens": "1024",
+        "output_tokens": "512",
+        "date": "2026-11-23"
+      },
+      "points": [
+        {
+          "row_id": 536,
+          "concurrency": "1",
+          "output_tok_s": "67.9"
+        },
+        {
+          "row_id": 537,
+          "concurrency": "1",
+          "output_tok_s": "67.9"
+        },
+        {
+          "row_id": 538,
+          "concurrency": "1",
+          "output_tok_s": "67.9"
+        },
+        {
+          "row_id": 539,
+          "concurrency": "4",
+          "output_tok_s": "232.5"
+        },
+        {
+          "row_id": 540,
+          "concurrency": "4",
+          "output_tok_s": "232.4"
+        },
+        {
+          "row_id": 541,
+          "concurrency": "4",
+          "output_tok_s": "232.5"
+        },
+        {
+          "row_id": 542,
+          "concurrency": "16",
+          "output_tok_s": "685.0"
+        },
+        {
+          "row_id": 543,
+          "concurrency": "16",
+          "output_tok_s": "684.4"
+        },
+        {
+          "row_id": 544,
+          "concurrency": "16",
+          "output_tok_s": "684.6"
+        },
+        {
+          "row_id": 545,
+          "concurrency": "64",
+          "output_tok_s": "1182.9"
+        },
+        {
+          "row_id": 546,
+          "concurrency": "64",
+          "output_tok_s": "1182.7"
+        },
+        {
+          "row_id": 547,
+          "concurrency": "64",
+          "output_tok_s": "1182.4"
+        },
+        {
+          "row_id": 548,
+          "concurrency": "128",
+          "output_tok_s": "1292.2"
+        },
+        {
+          "row_id": 549,
+          "concurrency": "128",
+          "output_tok_s": "1292.0"
+        },
+        {
+          "row_id": 550,
+          "concurrency": "128",
+          "output_tok_s": "1292.0"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-105.svg",
+      "group": {
+        "model": "Qwen3.8-27B-FP8",
+        "config": "max-num-seqs 256, prefix caching off",
+        "engine": "vLLM",
+        "engine_version": "0.34.0",
+        "gpu": "RTX PRO 6000",
+        "gpu_count": "1",
+        "area": "research",
+        "workload": "vllm bench serve, random prompts, ignore EOS, seed = repeat (1 to 3), prompts = max(8, 4 x concurrency)",
+        "precision": "FP8 weights, 16-bit KV cache",
+        "input_tokens": "1024",
+        "output_tokens": "512",
+        "date": "2026-11-23"
+      },
+      "points": [
+        {
+          "row_id": 506,
+          "concurrency": "1",
+          "output_tok_s": "45.4"
+        },
+        {
+          "row_id": 507,
+          "concurrency": "1",
+          "output_tok_s": "45.5"
+        },
+        {
+          "row_id": 508,
+          "concurrency": "1",
+          "output_tok_s": "45.4"
+        },
+        {
+          "row_id": 509,
+          "concurrency": "4",
+          "output_tok_s": "165.4"
+        },
+        {
+          "row_id": 510,
+          "concurrency": "4",
+          "output_tok_s": "165.3"
+        },
+        {
+          "row_id": 511,
+          "concurrency": "4",
+          "output_tok_s": "165.3"
+        },
+        {
+          "row_id": 512,
+          "concurrency": "16",
+          "output_tok_s": "553.1"
+        },
+        {
+          "row_id": 513,
+          "concurrency": "16",
+          "output_tok_s": "553.0"
+        },
+        {
+          "row_id": 514,
+          "concurrency": "16",
+          "output_tok_s": "552.9"
+        },
+        {
+          "row_id": 515,
+          "concurrency": "64",
+          "output_tok_s": "1266.5"
+        },
+        {
+          "row_id": 516,
+          "concurrency": "64",
+          "output_tok_s": "1265.7"
+        },
+        {
+          "row_id": 517,
+          "concurrency": "64",
+          "output_tok_s": "1265.9"
+        },
+        {
+          "row_id": 518,
+          "concurrency": "128",
+          "output_tok_s": "1567.3"
+        },
+        {
+          "row_id": 519,
+          "concurrency": "128",
+          "output_tok_s": "1567.4"
+        },
+        {
+          "row_id": 520,
+          "concurrency": "128",
+          "output_tok_s": "1567.3"
+        }
+      ]
+    },
+    {
+      "asset": "assets/charts/context-106.svg",
+      "group": {
+        "model": "Qwen3.8-27B-NVFP4",
+        "config": "max-num-seqs 256, prefix caching off",
+        "engine": "vLLM",
+        "engine_version": "0.34.0",
+        "gpu": "RTX PRO 6000",
+        "gpu_count": "1",
+        "area": "research",
+        "workload": "vllm bench serve, random prompts, ignore EOS, seed = repeat (1 to 3), prompts = max(8, 4 x concurrency)",
+        "precision": "NVFP4 weights (Unsloth checkpoint), 16-bit KV cache",
+        "input_tokens": "1024",
+        "output_tokens": "512",
+        "date": "2026-11-23"
+      },
+      "points": [
+        {
+          "row_id": 521,
+          "concurrency": "1",
+          "output_tok_s": "59.0"
+        },
+        {
+          "row_id": 522,
+          "concurrency": "1",
+          "output_tok_s": "59.0"
+        },
+        {
+          "row_id": 523,
+          "concurrency": "1",
+          "output_tok_s": "59.0"
+        },
+        {
+          "row_id": 524,
+          "concurrency": "4",
+          "output_tok_s": "213.3"
+        },
+        {
+          "row_id": 525,
+          "concurrency": "4",
+          "output_tok_s": "213.2"
+        },
+        {
+          "row_id": 526,
+          "concurrency": "4",
+          "output_tok_s": "213.2"
+        },
+        {
+          "row_id": 527,
+          "concurrency": "16",
+          "output_tok_s": "700.4"
+        },
+        {
+          "row_id": 528,
+          "concurrency": "16",
+          "output_tok_s": "700.0"
+        },
+        {
+          "row_id": 529,
+          "concurrency": "16",
+          "output_tok_s": "699.7"
+        },
+        {
+          "row_id": 530,
+          "concurrency": "64",
+          "output_tok_s": "1521.0"
+        },
+        {
+          "row_id": 531,
+          "concurrency": "64",
+          "output_tok_s": "1520.6"
+        },
+        {
+          "row_id": 532,
+          "concurrency": "64",
+          "output_tok_s": "1520.0"
+        },
+        {
+          "row_id": 533,
+          "concurrency": "128",
+          "output_tok_s": "1875.8"
+        },
+        {
+          "row_id": 534,
+          "concurrency": "128",
+          "output_tok_s": "1875.8"
+        },
+        {
+          "row_id": 535,
+          "concurrency": "128",
+          "output_tok_s": "1875.9"
+        }
+      ]
     }
   ]
 }

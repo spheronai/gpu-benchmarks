@@ -19,7 +19,7 @@ Numbers are kept exactly as recorded (not re-rounded) and stored as strings; par
 | `model` | text | Model name without the organization prefix, for example `Qwen3.8-27B`. Checkpoints published under their own name (`-FP8`, `-NVFP4`) are separate models; otherwise the precision is in `precision`. |
 | `config` | text | Serving configuration (see the glossary below), or `Dedicated Endpoint (managed)` for Spheron Dedicated Endpoints. |
 | `date` | YYYY-MM-DD | Day the measurement was recorded. |
-| `area` | text | Study the row belongs to: `dedicated-endpoints`, `multi-gpu-tuning`, `large-model-validation` or `single-node-sweeps`. See [PROVENANCE.md](PROVENANCE.md#areas). |
+| `area` | text | Study the row belongs to: `dedicated-endpoints`, `multi-gpu-tuning`, `large-model-validation`, `single-node-sweeps` or `research`. See [PROVENANCE.md](PROVENANCE.md#areas). |
 | `params_b` | number | Model parameters in billions, when recorded. |
 | `precision` | text | Weight, activation and KV cache precision. |
 | `engine` | text | `vLLM` or `SGLang`, with `+ MTP` when multi-token prediction is on. |
@@ -61,7 +61,7 @@ Numbers are kept exactly as recorded (not re-rounded) and stored as strings; par
 
 | Key | Meaning |
 |---|---|
-| `release` | Release version, for example `2026.11.23`. |
+| `release` | Release version, for example `2026.11.24`. |
 | `rows`, `source_rows` | Published rows, and records in the private source. |
 | `excluded_rows` | Records left out, by reason: `damaged-or-invalid`, `overloaded`, `warm-up-level`, `duplicate`, `incomplete`, `out-of-scope`. See [PROVENANCE.md](PROVENANCE.md#what-was-left-out). |
 | `source_catalog_sha256` | SHA-256 of the private source catalog this release was built from. |

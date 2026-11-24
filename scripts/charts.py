@@ -15,15 +15,17 @@ AREA_TITLES = {
     'multi-gpu-tuning': 'Multi-GPU tuning on B200 and B300',
     'large-model-validation': 'Large-model validation on B300',
     'single-node-sweeps': 'Single-node sweeps',
+    'research': 'Spheron Research studies',
 }
 AREA_NOTES = {
     'dedicated-endpoints': 'November 2026 runs on Spheron Dedicated Endpoints: one GPU, vLLM or SGLang as installed by default.',
     'multi-gpu-tuning': 'October 2026 tuning sweeps on B200 and B300, one to eight GPUs: tensor, data and expert parallelism, speculative decoding, KV cache and context options.',
     'large-model-validation': 'October 2026 validation sweeps of large mixture-of-experts models on 4x B300.',
     'single-node-sweeps': 'November 2026 `vllm bench serve` sweeps and single-request image tests on one node.',
+    'research': 'Throughput runs from published Spheron Research studies, each with its report, scripts and raw data under `research/`.',
 }
 AREA_ORDER = list(AREA_TITLES)
-RELEASE = '2026.11.23'
+RELEASE = '2026.11.24'
 
 def number(value):
     try:

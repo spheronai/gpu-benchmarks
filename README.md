@@ -1,6 +1,6 @@
 # Spheron GPU Benchmarks
 
-LLM inference throughput and latency measured on cloud GPUs (B300, B200, H200, H100, RTX PRO 6000, L40S, A100 and more) with vLLM and SGLang. 490 dated load measurements from October and November 2026, every one tagged with model, GPU, engine, version, precision and workload, plus a small Python client to measure your own endpoint the same way.
+LLM inference throughput and latency measured on cloud GPUs (B300, B200, H200, H100, RTX PRO 6000, L40S, A100 and more) with vLLM and SGLang. 550 dated load measurements from October and November 2026, every one tagged with model, GPU, engine, version, precision and workload, a research study with its report, scripts and raw data, and a small Python client to measure your own endpoint the same way.
 
 Data and charts: [CC BY 4.0](LICENSE-DATA). Code: [MIT](LICENSE). Cite with [CITATION.cff](CITATION.cff) or the [snippet below](#how-to-cite).
 
@@ -33,20 +33,30 @@ Each finding names its rows (`row_id` in [data/catalog.csv](data/catalog.csv)) s
 
 The prompt repeats in this workload, so prefix caching can lift these numbers above what unique traffic would see. Use them to compare GPUs and engines with each other. The engine version is the Dedicated Endpoints default on that day (`managed default`); the exact version was not recorded for these runs.
 
-These are the clearest results, not the only ones. [docs/RESULTS.md](docs/RESULTS.md) has 102 charts with full numeric tables, grouped by study, and [docs/MODELS.md](docs/MODELS.md) lists all 16 models.
+These are the clearest results, not the only ones. [docs/RESULTS.md](docs/RESULTS.md) has 106 charts with full numeric tables, grouped by study, and [docs/MODELS.md](docs/MODELS.md) lists all 18 models.
+
+## Research studies
+
+Each study is one folder under [research/](research) with its report, the scripts that ran it, the derived results and charts. Raw data (per-question eval outputs, benchmark JSON, server logs) is attached to the GitHub release named in the report. Throughput runs from each study are also in the catalog with area `research`.
+
+| Study | Measured | Question | Catalog rows |
+|---|---|---|---|
+| [Study 1: FP8 vs NVFP4 vs AWQ](research/2026-11-23-qwen38-27b-quantization/REPORT.md) | 2026-11-23, 1x RTX PRO 6000, vLLM 0.34.0 | Which Qwen3.8-27B checkpoint should you serve? Accuracy on GSM8K, MMLU-Pro (subset), MATH-500, IFEval and needle retrieval, plus throughput, latency and energy, against BF16. | 491 to 550 |
+
+Study 1 in one line: at a latency target of 20 tok/s per user and first token p95 under 2 s, the NVFP4 checkpoint served 700 output tok/s at 16 concurrent users against 101 tok/s at 4 users for BF16, and none of the three quantized checkpoints lost a statistically significant amount of accuracy.
 
 ## What is in the data
 
 | | |
 |---|---:|
-| Published measurements | 490 |
-| Models / GPU models | 16 / 14 |
-| Charts (exact contexts) / rows plotted | 102 / 448 |
-| Date range | 2026-10-08 to 2026-11-21 |
+| Published measurements | 550 |
+| Models / GPU models | 18 / 14 |
+| Charts (exact contexts) / rows plotted | 106 / 508 |
+| Date range | 2026-10-08 to 2026-11-23 |
 
 Every row is one load measurement: one model on one GPU type served by one vLLM or SGLang engine, at a recorded concurrency, with its output throughput. Each row also carries its `date`, `gpu_count`, `engine_version`, `precision` and `workload`. Model, GPU and configuration labels are normalized (for example `Qwen/Qwen3.8-27B` becomes `Qwen3.8-27B`, and every H100 SXM5 label becomes `H100 SXM`); numbers are exactly as recorded. Where a field was not recorded the cell is empty and the docs say "not recorded"; the largest gap is engine version and precision on the 71 validation rows. Records that fail these rules or the data-quality checks (failed or invalid runs, overloaded levels, the SGLang concurrency-4 level on Dedicated Endpoints, duplicates) are left out; [PROVENANCE.md](docs/PROVENANCE.md#what-was-left-out) counts them by reason.
 
-Rows come from four studies (`area` column):
+Rows come from five areas (`area` column):
 
 | Area | Dates | What it covers |
 |---|---|---|
@@ -54,6 +64,7 @@ Rows come from four studies (`area` column):
 | `multi-gpu-tuning` | 2026-10-08 to 10-09 | B200 and B300, one to eight GPUs: tensor, data and expert parallelism, speculative decoding, KV cache and context options. |
 | `large-model-validation` | 2026-10-10 to 10-21 | Validation sweeps of GLM-5.3, GLM-5.3-Flash, Kimi-K2.7-Code and DeepSeek-V4.1-Flash on 4x B300. |
 | `single-node-sweeps` | 2026-11-07 to 11-18 | `vllm bench serve` sweeps and single-request image tests on one node. |
+| `research` | 2026-11-23 | Throughput runs from the [research studies](#research-studies): BF16, FP8, NVFP4 and INT4-AWQ checkpoints of Qwen3.8-27B on one RTX PRO 6000. |
 
 ## Data layout
 
@@ -62,12 +73,13 @@ data/catalog.csv     one row per measurement (CSV)
 data/catalog.json    the same rows as JSON, empty cells as null
 data/summary.json    counts, date range, exclusions, column list
 data/charts.json     every chart: the fixed context and the plotted rows
-docs/RESULTS.md      102 charts grouped by study, each with a numeric table
+docs/RESULTS.md      106 charts grouped by study, each with a numeric table
 docs/MODELS.md       every model with its rows, GPUs and dates
 docs/DATA.md         schema for every file and column
 docs/METHODOLOGY.md  how each area measured, metric definitions, limits
 docs/PROVENANCE.md   source hash, what was excluded and why
 assets/charts/       SVG charts (readable titles and descriptions)
+research/            one folder per research study: report, scripts, results, charts
 benchmark.py         client for new measurements
 scripts/             chart renderer and package validator
 tests/               offline tests
@@ -90,7 +102,7 @@ Each chart holds one exact context fixed (model, config, engine and version, GPU
 
 ## Reproduce
 
-**Check a number.** Find its `row_id` in [data/catalog.csv](data/catalog.csv). The same row appears in [docs/RESULTS.md](docs/RESULTS.md) under its chart. Row ids are stable within a release version.
+**Check a number.** Find its `row_id` in [data/catalog.csv](data/catalog.csv). The same row appears in [docs/RESULTS.md](docs/RESULTS.md) under its chart. Rows 1 to 490 kept their ids from release 2026.11.23; new rows are added at the end.
 
 **Measure your own endpoint.** [benchmark.py](benchmark.py) needs Python 3.9 or newer and nothing else (no pip installs; tested on 3.9.6 and 3.12.14). Point it at any OpenAI-compatible chat completions URL you are allowed to load-test. Load tests can cost money and slow the endpoint for others, so start small.
 
@@ -121,16 +133,16 @@ The validator checks that the CSV, JSON, charts and docs agree with each other, 
 
 ## How to cite
 
-> Spheron (2026). *Spheron GPU Benchmarks: LLM inference throughput and latency on cloud GPUs* (version 2026.11.23) [Data set]. https://github.com/spheronai/gpu-benchmarks
+> Spheron (2026). *Spheron GPU Benchmarks: LLM inference throughput and latency on cloud GPUs* (version 2026.11.24) [Data set]. https://github.com/spheronai/gpu-benchmarks
 
-When quoting a single number, add its `row_id` and the version, for example: "22,419 output tok/s for Kimi-K2.7-Code on 8x B300 (Spheron GPU Benchmarks 2026.11.23, row 316)".
+When quoting a single number, add its `row_id` and the version, for example: "22,419 output tok/s for Kimi-K2.7-Code on 8x B300 (Spheron GPU Benchmarks 2026.11.24, row 316)".
 
 ```bibtex
 @misc{spheron_gpu_benchmarks_2026,
   author       = {{Spheron}},
   title        = {Spheron GPU Benchmarks: LLM inference throughput and latency on cloud GPUs},
   year         = {2026},
-  version      = {2026.11.23},
+  version      = {2026.11.24},
   howpublished = {\url{https://github.com/spheronai/gpu-benchmarks}},
   note         = {Data set, CC BY 4.0}
 }
@@ -138,4 +150,4 @@ When quoting a single number, add its `row_id` and the version, for example: "22
 
 ## License
 
-Data, charts and documentation are licensed under [Creative Commons Attribution 4.0 International](LICENSE-DATA): reuse them freely with credit to Spheron and a link to this repository. Code (`benchmark.py`, `scripts/`, `tests/`) is licensed under the [MIT License](LICENSE). Model, GPU and software names (including NVIDIA, vLLM and SGLang) are trademarks of their owners. This repository does not include or redistribute any model weights.
+Data, charts and documentation are licensed under [Creative Commons Attribution 4.0 International](LICENSE-DATA): reuse them freely with credit to Spheron and a link to this repository. Code (`benchmark.py`, `scripts/`, `tests/` and each study's `harness/`) is licensed under the [MIT License](LICENSE). Model, GPU and software names (including NVIDIA, vLLM and SGLang) are trademarks of their owners. This repository does not include or redistribute any model weights.

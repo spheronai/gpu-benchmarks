@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" role="img" aria-labelledby="title desc"><title id="title">Output throughput versus concurrency</title><desc id="desc">model: Qwen3.8-27B-NVFP4 | config: max-num-seqs 256, prefix caching off | engine: vLLM | engine_version: 0.34.0 | gpu: RTX PRO 6000 | gpu_count: 1 | area: research | workload: vllm bench serve, random prompts, ignore EOS, seed = repeat (1 to 3), prompts = max(8, 4 x concurrency) | precision: NVFP4 weights (Unsloth checkpoint), 16-bit KV cache | input_tokens: 1024 | output_tokens: 512 | date: 2026-11-23. Each dot is one recorded run. The numeric table with row references is in docs/RESULTS.md.</desc>
+<defs><linearGradient id="shine"><stop stop-color="#ffffff"/><stop offset="45%" stop-color="#8fd8ff"/><stop offset="100%" stop-color="#2f7bff"/></linearGradient></defs>
+<rect width="1000" height="620" fill="#000000"/>
+<rect x="20" y="20" width="960" height="580" fill="#050608" stroke="#ffffff" stroke-opacity="0.08"/>
+<path d="M30 20H20V30 M970 20H980V30 M20 590V600H30 M970 600H980V590" fill="none" stroke="#ffffff" stroke-opacity="0.27"/>
+<g font-family="SF Pro Display, SF Pro Text, Inter, Arial, sans-serif" font-size="15" font-weight="400" fill="#ffffff">
+<text x="64" y="52" font-family="OCR A Std, Share Tech Mono, monospace" font-size="11" letter-spacing="0.16em" fill="#ffffff" fill-opacity="0.55">RECORDED RUNS</text>
+<path d="M300 48H936" stroke="#ffffff" stroke-opacity="0.08"/>
+<text x="64" y="94" font-size="30" letter-spacing="-0.035em">Output throughput <tspan fill="url(#shine)">versus concurrency</tspan></text>
+<text x="64" y="126" fill-opacity="0.55">model: Qwen3.8-27B-NVFP4 | config: max-num-seqs 256, prefix caching off | engine: vLLM</text>
+<text x="64" y="146" fill-opacity="0.55">| engine_version: 0.34.0 | gpu: RTX PRO 6000 | gpu_count: 1 | area: research |</text>
+<text x="64" y="166" fill-opacity="0.55">workload: vllm bench serve, random prompts, ignore EOS, seed = repeat (1 to 3),</text>
+<text x="64" y="186" fill-opacity="0.55">prompts = max(8, 4 x concurrency) | precision: NVFP4 weights (Unsloth checkpoint),</text>
+<text x="64" y="206" fill-opacity="0.55">16-bit KV cache | input_tokens: 1024 | output_tokens: 512 | date: 2026-11-23</text>
+<rect x="130" y="240" width="806" height="270" fill="#0a0b0e"/><path d="M130 240V510H936" fill="none" stroke="#ffffff" stroke-opacity="0.14"/>
+<path d="M130 510.0H936" stroke="#ffffff" stroke-opacity="0.08"/><text x="118" y="515.0" text-anchor="end" font-family="OCR A Std, Share Tech Mono, monospace">0.0</text>
+<path d="M130 442.5H936" stroke="#ffffff" stroke-opacity="0.08"/><text x="118" y="447.5" text-anchor="end" font-family="OCR A Std, Share Tech Mono, monospace">469.0</text>
+<path d="M130 375.0H936" stroke="#ffffff" stroke-opacity="0.08"/><text x="118" y="380.0" text-anchor="end" font-family="OCR A Std, Share Tech Mono, monospace">938.0</text>
+<path d="M130 307.5H936" stroke="#ffffff" stroke-opacity="0.08"/><text x="118" y="312.5" text-anchor="end" font-family="OCR A Std, Share Tech Mono, monospace">1406.9</text>
+<path d="M130 240.0H936" stroke="#ffffff" stroke-opacity="0.08"/><text x="118" y="245.0" text-anchor="end" font-family="OCR A Std, Share Tech Mono, monospace">1875.9</text>
+<text x="160.00" y="536" text-anchor="middle" font-family="OCR A Std, Share Tech Mono, monospace">1</text>
+<text x="374.29" y="536" text-anchor="middle" font-family="OCR A Std, Share Tech Mono, monospace">4</text>
+<text x="588.57" y="536" text-anchor="middle" font-family="OCR A Std, Share Tech Mono, monospace">16</text>
+<text x="802.86" y="536" text-anchor="middle" font-family="OCR A Std, Share Tech Mono, monospace">64</text>
+<text x="910.00" y="536" text-anchor="middle" font-family="OCR A Std, Share Tech Mono, monospace">128</text>
+<circle cx="160.00" cy="501.51" r="5" fill="#0059ff" stroke="#8fd8ff" stroke-width="1"><title>row 521: concurrency 1; output 59.0 tok/s</title></circle>
+<circle cx="160.00" cy="501.51" r="5" fill="#0059ff" stroke="#8fd8ff" stroke-width="1"><title>row 522: concurrency 1; output 59.0 tok/s</title></circle>
+<circle cx="160.00" cy="501.51" r="5" fill="#0059ff" stroke="#8fd8ff" stroke-width="1"><title>row 523: concurrency 1; output 59.0 tok/s</title></circle>
+<circle cx="374.29" cy="479.30" r="5" fill="#0059ff" stroke="#8fd8ff" stroke-width="1"><title>row 524: concurrency 4; output 213.3 tok/s</title></circle>
+<circle cx="374.29" cy="479.31" r="5" fill="#0059ff" stroke="#8fd8ff" stroke-width="1"><title>row 525: concurrency 4; output 213.2 tok/s</title></circle>
+<circle cx="374.29" cy="479.31" r="5" fill="#0059ff" stroke="#8fd8ff" stroke-width="1"><title>row 526: concurrency 4; output 213.2 tok/s</title></circle>
+<circle cx="588.57" cy="409.19" r="5" fill="#0059ff" stroke="#8fd8ff" stroke-width="1"><title>row 527: concurrency 16; output 700.4 tok/s</title></circle>
+<circle cx="588.57" cy="409.25" r="5" fill="#0059ff" stroke="#8fd8ff" stroke-width="1"><title>row 528: concurrency 16; output 700.0 tok/s</title></circle>
+<circle cx="588.57" cy="409.29" r="5" fill="#0059ff" stroke="#8fd8ff" stroke-width="1"><title>row 529: concurrency 16; output 699.7 tok/s</title></circle>
+<circle cx="802.86" cy="291.08" r="5" fill="#0059ff" stroke="#8fd8ff" stroke-width="1"><title>row 530: concurrency 64; output 1521.0 tok/s</title></circle>
+<circle cx="802.86" cy="291.14" r="5" fill="#0059ff" stroke="#8fd8ff" stroke-width="1"><title>row 531: concurrency 64; output 1520.6 tok/s</title></circle>
+<circle cx="802.86" cy="291.23" r="5" fill="#0059ff" stroke="#8fd8ff" stroke-width="1"><title>row 532: concurrency 64; output 1520.0 tok/s</title></circle>
+<circle cx="910.00" cy="240.01" r="5" fill="#0059ff" stroke="#8fd8ff" stroke-width="1"><title>row 533: concurrency 128; output 1875.8 tok/s</title></circle>
+<circle cx="910.00" cy="240.01" r="5" fill="#0059ff" stroke="#8fd8ff" stroke-width="1"><title>row 534: concurrency 128; output 1875.8 tok/s</title></circle>
+<circle cx="910.00" cy="240.00" r="5" fill="#0059ff" stroke="#8fd8ff" stroke-width="1"><title>row 535: concurrency 128; output 1875.9 tok/s</title></circle>
+<text x="530" y="563" text-anchor="middle" font-family="OCR A Std, Share Tech Mono, monospace" font-size="11" letter-spacing="0.16em">CONCURRENT REQUESTS (LOG SCALE)</text>
+<text x="49" y="375" transform="rotate(-90 49 375)" text-anchor="middle">Output tokens / second</text>
+<text x="64" y="585" fill="#f59e0b">Each dot is one run. Compare only charts with the same workload. Numbers: docs/RESULTS.md</text>
+</g></svg>

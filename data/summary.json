@@ -1,7 +1,7 @@
 {
-  "release": "2026.11.23",
-  "rows": 490,
-  "source_rows": 958,
+  "release": "2026.11.24",
+  "rows": 550,
+  "source_rows": 1018,
   "excluded_rows": {
     "damaged-or-invalid": 54,
     "overloaded": 12,
@@ -10,14 +10,14 @@
     "incomplete": 100,
     "out-of-scope": 287
   },
-  "models": 16,
+  "models": 18,
   "gpu_models": 14,
-  "chart_groups": 102,
-  "chart_eligible_rows": 490,
-  "plotted_rows": 448,
+  "chart_groups": 106,
+  "chart_eligible_rows": 550,
+  "plotted_rows": 508,
   "date_min": "2026-10-08",
-  "date_max": "2026-11-21",
-  "source_catalog_sha256": "cc6a6159e5d002c8a2bad0280abd42fbed02279faab59e9935fcfd7c9e430760",
+  "date_max": "2026-11-23",
+  "source_catalog_sha256": "26b90664c3a9eee3f85cfd319902055d0f04b502c44464539606805ee7660d12",
   "columns": [
     "row_id",
     "model",
@@ -60,6 +60,7 @@
     "dedicated-endpoints",
     "multi-gpu-tuning",
     "large-model-validation",
-    "single-node-sweeps"
+    "single-node-sweeps",
+    "research"
   ]
 }

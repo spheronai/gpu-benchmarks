@@ -1,14 +1,14 @@
 # Provenance
 
-Source catalog SHA-256: `cc6a6159e5d002c8a2bad0280abd42fbed02279faab59e9935fcfd7c9e430760`.
+Source catalog SHA-256: `26b90664c3a9eee3f85cfd319902055d0f04b502c44464539606805ee7660d12`.
 
 The public data is exported from one internal source catalog by an internal build script. It copies an explicit list of columns (listed in [summary.json](../data/summary.json) and [DATA.md](DATA.md)), keeps every number exactly as recorded and normalizes model, GPU and configuration labels to one public name each. It publishes every record that is a load measurement of one model on one GPU type served by one vLLM or SGLang engine, with GPU, GPU count, engine, concurrency and output throughput recorded, and that passes the checks below.
 
-`row_id` numbers the published rows 1 to 490 in release 2026.11.23. Cite a single result by its `row_id` and the release.
+`row_id` numbers the published rows 1 to 550 in release 2026.11.24. Cite a single result by its `row_id` and the release.
 
 ## What was left out
 
-The source holds 958 records. 490 are published; the rest are counted here by the first reason that applies.
+The source holds 1018 records. 550 are published; the rest are counted here by the first reason that applies.
 
 | Reason | Rows | Meaning |
 |---|---:|---|
@@ -27,6 +27,7 @@ The source holds 958 records. 490 are published; the rest are counted here by th
 | `multi-gpu-tuning` | October 2026 tuning sweeps on B200 and B300, one to eight GPUs: tensor, data and expert parallelism, speculative decoding, KV cache and context options. |
 | `large-model-validation` | October 2026 validation sweeps of large mixture-of-experts models on 4x B300. |
 | `single-node-sweeps` | November 2026 `vllm bench serve` sweeps and single-request image tests on one node. |
+| `research` | Throughput runs from published Spheron Research studies, each with its report, scripts and raw data under `research/`. |
 
 ## Limits
 
