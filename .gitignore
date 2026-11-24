@@ -17,7 +17,7 @@ logs/
 *.jsonl
 *.jsonl.*
 run-*.json
-results/
+/results/
 local/
 raw/
 *token*.txt
