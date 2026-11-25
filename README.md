@@ -46,7 +46,6 @@ Spheron Research studies are published in their own repository, [spheronai/resea
 
 Study 1 in one line: at a latency target of 20 tok/s per user and first token p95 under 2 s, the NVFP4 checkpoint served 700 output tok/s at 16 concurrent users against 101 tok/s at 4 users for BF16, and none of the three quantized checkpoints lost a statistically significant amount of accuracy.
 
-The studies were first published under [research/](research) here (releases 2026.11.24 and 2026.11.25); those folders now point to the new repository.
 
 ## What is in the data
 
@@ -82,7 +81,6 @@ docs/DATA.md         schema for every file and column
 docs/METHODOLOGY.md  how each area measured, metric definitions, limits
 docs/PROVENANCE.md   source hash, what was excluded and why
 assets/charts/       SVG charts (readable titles and descriptions)
-research/            pointers to the studies, now in github.com/spheronai/research
 benchmark.py         client for new measurements
 scripts/             chart renderer and package validator
 tests/               offline tests
