@@ -27,7 +27,7 @@ The source holds 1018 records. 550 are published; the rest are counted here by t
 | `multi-gpu-tuning` | October 2026 tuning sweeps on B200 and B300, one to eight GPUs: tensor, data and expert parallelism, speculative decoding, KV cache and context options. |
 | `large-model-validation` | October 2026 validation sweeps of large mixture-of-experts models on 4x B300. |
 | `single-node-sweeps` | November 2026 `vllm bench serve` sweeps and single-request image tests on one node. |
-| `research` | Throughput runs from published Spheron Research studies, each with its report, scripts and raw data under `research/`. |
+| `research` | Throughput runs from published Spheron Research studies. Each study's report, scripts and raw data are in [spheronai/research](https://github.com/spheronai/research). |
 
 ## Limits
 
