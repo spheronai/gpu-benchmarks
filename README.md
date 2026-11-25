@@ -37,17 +37,16 @@ These are the clearest results, not the only ones. [docs/RESULTS.md](docs/RESULT
 
 ## Research studies
 
-Each study is one folder under [research/](research) with its report, the scripts that ran it, the derived results and charts. Raw data (per-question eval outputs, benchmark JSON, server logs) is too large for git and is linked from each report. Studies that measure inference throughput also add their runs to the catalog with area `research`.
+Spheron Research studies are published in their own repository, [spheronai/research](https://github.com/spheronai/research), with their reports, scripts, results, charts and raw data. Studies that measure inference throughput also add their runs to this catalog with area `research`.
 
 | Study | Measured | Question | Catalog rows |
 |---|---|---|---|
-| [Study 1: FP8 vs NVFP4 vs AWQ](research/2026-11-23-qwen38-27b-quantization/REPORT.md) | 2026-11-23, 1x RTX PRO 6000, vLLM 0.34.0 | Which Qwen3.8-27B checkpoint should you serve? Accuracy on GSM8K, MMLU-Pro (subset), MATH-500, IFEval and needle retrieval, plus throughput, latency and energy, against BF16. | 491 to 550 |
-| [Study 2, run one: camera move reader](research/2026-11-24-camera-move-reader/REPORT.md) | 2026-11-24, 1x H100 PCIe | Can a small model on top of Depth Anything 3 read a camera move well enough to re-shoot it? | none (not an inference benchmark) |
-| [Study 2, run two: camera move reader](research/2026-11-25-camera-move-reader-2/REPORT.md) | 2026-11-24 to 25, 1x H100 PCIe | Does training on more kinds of motion make it beat Depth Anything 3 plus naming rules? | none (not an inference benchmark) |
+| [Study 1: FP8 vs NVFP4 vs AWQ](https://github.com/spheronai/research/blob/main/2026-11-23-qwen38-27b-quantization/REPORT.md) | 2026-11-23, 1x RTX PRO 6000, vLLM 0.34.0 | Which Qwen3.8-27B checkpoint should you serve? Accuracy on GSM8K, MMLU-Pro (subset), MATH-500, IFEval and needle retrieval, plus throughput, latency and energy, against BF16. | 491 to 550 |
+| [Study 2: camera move reader](https://github.com/spheronai/research/blob/main/2026-11-25-camera-move-reader-2/REPORT.md) | 2026-11-24 to 25, 1x H100 PCIe | Can a small model on top of Depth Anything 3 name camera moves better than Depth Anything 3 plus naming rules? | none (not an inference benchmark) |
 
 Study 1 in one line: at a latency target of 20 tok/s per user and first token p95 under 2 s, the NVFP4 checkpoint served 700 output tok/s at 16 concurrent users against 101 tok/s at 4 users for BF16, and none of the three quantized checkpoints lost a statistically significant amount of accuracy.
 
-Study 2 in one line, a negative result across both runs: no trained head beat Depth Anything 3 plus a simple naming rule on held-out move pairs or on human camera paths, so Depth Anything 3 plus rules is the tool to use and the head's weights are not released.
+The studies were first published under [research/](research) here (releases 2026.11.24 and 2026.11.25); those folders now point to the new repository.
 
 ## What is in the data
 
@@ -83,7 +82,7 @@ docs/DATA.md         schema for every file and column
 docs/METHODOLOGY.md  how each area measured, metric definitions, limits
 docs/PROVENANCE.md   source hash, what was excluded and why
 assets/charts/       SVG charts (readable titles and descriptions)
-research/            one folder per research study: report, scripts, results, charts
+research/            pointers to the studies, now in github.com/spheronai/research
 benchmark.py         client for new measurements
 scripts/             chart renderer and package validator
 tests/               offline tests

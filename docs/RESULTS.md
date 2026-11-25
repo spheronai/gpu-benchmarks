@@ -1598,7 +1598,7 @@ November 2026 `vllm bench serve` sweeps and single-request image tests on one no
 
 ## Spheron Research studies
 
-Throughput runs from published Spheron Research studies, each with its report, scripts and raw data under `research/`.
+Throughput runs from published Spheron Research studies. Each study's report, scripts and raw data are in [spheronai/research](https://github.com/spheronai/research).
 
 ### Context 103
 
