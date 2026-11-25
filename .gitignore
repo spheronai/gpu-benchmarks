@@ -22,3 +22,4 @@ local/
 raw/
 *token*.txt
 .DS_Store
+!/research/*/jobs/*.jsonl
